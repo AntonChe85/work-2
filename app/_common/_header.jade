@@ -1,0 +1,52 @@
+doctype html
+html(lang="ru")
+head
+  meta(charset="UTF-8")
+  title my~online~store
+  link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+  link(rel="stylesheet", href="css/main.css")
+  link(rel="stylesheet", href="css/fonts.css")
+body
+  header.header
+    .container.clearfix
+      .header__socials
+        ul.header__socials__list.hidden-text.clearfix
+          li.header__socials__item.header__socials__fb  
+            a(href="https://www.facebook.com/" target="_blank").header__socials__link       
+              span.header__socials__text facebook
+          li.header__socials__item.header__socials__b      
+            a(href="https://vk.com/" target="_blank").header__socials__link
+              span.header__socials__text vkontakte
+          li.header__socials__item.header__socials__tw       
+            a(href="https://twitter.com/" target="_blank").header__socials__link
+              span.header__socials__text twitter
+      .header__phone   
+        span.header__phone-number +7 (921) 123-12-13         
+      .header__adress
+        span.header__adress-adr ул. Маяковская 6, оф 17
+  .search
+    .container.clearfix
+      .search__logo
+        a(href="index.html").search__logo__link
+          img(src="img/logo.png", alt="#", title="Логотип").search__logo-img
+          span.search__logo-text  
+      form.search__form.search__form_margin-left
+        label(for="search")  
+        input(type="text" id="search" placeholder="Что будем искать").search__form__input  
+        submit.search__form__btn Найти  
+      .search__nav
+        ul.search__nav__list
+          li.search__nav__item 
+            a(href="#").search__nav__link.active  
+              span.search__nav__text Карта проезда 
+          li.search__nav__item 
+            a(href="#").search__nav__link  
+              span.search__nav__text История заказов
+          li.search__nav__item 
+            a(href="#").search__nav__link  
+              span.search__nav__text Корзина            
+    
+      
+     
+    
+  
