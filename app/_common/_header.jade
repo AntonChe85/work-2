@@ -1,51 +1,45 @@
-doctype html
-html(lang="ru")
-head
-  meta(charset="UTF-8")
-  title my~online~store
-  link(rel="stylesheet", href="bower/normalize-css/normalize.css")
-  link(rel="stylesheet", href="css/main.css")
-  link(rel="stylesheet", href="css/fonts.css")
-body
-  header.header
+header.header
+  .header-contact
     .container.clearfix
-      .header__socials
-        ul.header__socials__list.hidden-text.clearfix
-          li.header__socials__item.header__socials__fb  
+      .header-contact__socials
+        ul.header-contact__socials__list.hidden-text.clearfix
+          li.header-contact__socials__item.header-contact__socials__fb  
             a(href="https://www.facebook.com/" target="_blank").header__socials__link       
-              span.header__socials__text facebook
-          li.header__socials__item.header__socials__b      
-            a(href="https://vk.com/" target="_blank").header__socials__link
-              span.header__socials__text vkontakte
-          li.header__socials__item.header__socials__tw       
-            a(href="https://twitter.com/" target="_blank").header__socials__link
-              span.header__socials__text twitter
-      .header__phone   
-        span.header__phone-number +7 (921) 123-12-13         
-      .header__adress
-        span.header__adress-adr ул. Маяковская 6, оф 17
-  .search
+              span.header-contact__socials__text facebook
+          li.header-contact__socials__item.header-contact__socials__b      
+            a(href="https://vk.com/" target="_blank").header-contact__socials__link
+              span.header-contact__socials__text vkontakte
+          li.header-contact__socials__item.header-contact__socials__tw       
+            a(href="https://twitter.com/" target="_blank").header-contact__socials__link
+              span.header-contact__socials__text twitter
+      .header-contact__phone.header-contact__phone_mod   
+        span.header-contact__phone-number +7 (921) 123-12-13         
+      .header-contact__adress.header-contact__adress_mod
+        span.header-contact__adress-adr ул. Маяковская 6, оф 17
+  .header-search
     .container.clearfix
-      .search__logo
-        a(href="index.html").search__logo__link
-          img(src="img/logo.png", alt="#", title="Логотип").search__logo-img
-          span.search__logo-text  
-      form.search__form.search__form_margin-left
+      .header-search__logo
+        a(href="index.html").header-search__logo__link
+          img(src="img/logo.png", alt="#", title="Логотип").header-search__logo-img
+          span.header-search__logo-text  
+      form.header-search__form.header-search__form_mod
         label(for="search")  
-        input(type="text" id="search" placeholder="Что будем искать").search__form__input  
-        submit.search__form__btn Найти  
-      .search__nav
-        ul.search__nav__list
-          li.search__nav__item 
-            a(href="#").search__nav__link.active  
-              span.search__nav__text Карта проезда 
-          li.search__nav__item 
-            a(href="#").search__nav__link  
-              span.search__nav__text История заказов
-          li.search__nav__item 
-            a(href="#").search__nav__link  
-              span.search__nav__text Корзина            
-    
+        input(type="text" id="search" placeholder="Что будем искать").header-search__form__input  
+        submit.header-search__form__btn Найти  
+      .header-search__nav
+        ul.header-search__nav__list
+          each nav in ['Карта проезда', 'История заказов', 'Корзина']
+            li.header-search__nav__item 
+              a(href="#").header-search__nav__link  
+                span.header-search__nav__text= nav              
+  .header-nav 
+    .container
+      ul.header-nav__menu.header-nav__menu_mod.clearfix
+        each menu in ['Планшеты', 'Мобильные телефоны', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+          li.header-nav__menu__item
+            a(href="#").header-nav__menu__link
+              span.header-nav__menu__text= menu
+      
       
      
     

@@ -11,11 +11,12 @@ gulp.task('jade', function () {
 });
 
  //Компиляция SASS в CSS
-gulp.task('sass', function () {
-  gulp.src('app/scss/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(gulp.dest('app/css'));
-});
+ gulp.task('sass', function () {
+   gulp.src('app/scss/*.scss')
+     .pipe(sass({pretty: true}))
+     .pipe(sass())
+     .pipe(gulp.dest('app/css'))
+ });
 
 // Запускаем локальный сервер (только после компиляции jade&sass)
 gulp.task('server', ['jade', 'sass'], function () {
