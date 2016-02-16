@@ -1,0 +1,26 @@
+footer.footer
+  .container.clearfix 
+    .b-footer-left
+      a(href="index.html").b-footer__logo__link
+        img(src="img/logo-footer.png", alt="#", title="Логотип").b-footer__logo-img.b-footer__logo-img_mod
+        span.b-footer__logo-text
+    .b-footer-right.clearfix
+      .b-footer-socials
+        ul.b-footer-socials__list.hidden-text.clearfix
+          li.b-footer-socials__item.b-footer-socials__fb  
+            a(href="https://www.facebook.com/" target="_blank").b-footer-socials__link       
+              span.b-footer-socials__text facebook
+          li.b-footer-socials__item.b-footer-socials__b      
+            a(href="https://vk.com/" target="_blank").b-footer-socials__link
+              span.b-footer-socials__text vkontakte
+          li.b-footer-socials__item.b-footer-socials__tw       
+            a(href="https://twitter.com/" target="_blank").b-footer-socials__link
+              span.b-footer-socials__text twitter
+      .b-footer-nav
+        ul.b-footer-nav__menu.clearfix
+          each menu in ['Планшеты', 'Мобильные телефоны', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+            li.b-footer-nav__menu__item
+              a(href="#").b-footer-nav__menu__link
+                span.b-footer-nav__menu__text= menu       
+  .b-footer-copyright 
+    .b-footer-copyright__text All rights reserved. 2015. no copy alowed          

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.content-text__title {
+  color: #333;
+  font-family: 'OpenSans SemiBold', sans-serif;
+  font-size: 18px; }
+
+.content-text__col {
+  -moz-column-count: 2;
+  /* Для Firefox */
+  -webkit-column-count: 2;
+  /* Для Safari и Chrome */
+  column-count: 2;
+  font-size: 13px;
+  font-family: 'OpenSans', sans-serif;
+  text-indent: 3em; }

@@ -1,0 +1,25 @@
+@mixin font-main {
+	font-family: 'OpenSans', sans-serif;
+}
+@mixin font-bold {
+	font-family: 'OpenSans SemiBold', sans-serif;
+}
+
+.content-text {
+
+}
+
+.content-text__title {
+  color: #333;
+  @include font-bold;
+  font-size: 18px;
+}
+
+.content-text__col {
+  -moz-column-count: 2; /* Для Firefox */
+  -webkit-column-count: 2; /* Для Safari и Chrome */
+  column-count: 2;
+  font-size: 13px;
+  @include font-main;
+  text-indent: 3em;
+}

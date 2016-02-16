@@ -1,0 +1,138 @@
+@mixin font-main {
+	font-family: 'OpenSans', sans-serif;
+}
+@mixin font-bold {
+	font-family: 'OpenSans SemiBold', sans-serif;
+}
+
+@mixin font-light {
+	font-family: 'OpenSans Light', sans-serif;
+}
+
+@mixin list-off{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+$main-color: #ff6600;
+$bg-color: #f4f4f4;
+$border-color: #ebedef;
+$element-color: #fff;
+$fbt-color: #494949;
+$link-color: #333;
+
+.footer {
+  background: url(../img/bg.png);
+  min-width: 1110px;
+  @include font-main;
+}
+
+.b-footer-left {
+  float: left;
+}
+
+.b-footer__logo-img_mod {
+  margin: 70px 0 80px 0;
+}
+
+.b-footer-right {
+  float: right;
+}
+
+.b-footer-socials {
+  float: right;
+  margin: 35px 0 30px 0;
+}
+
+.b-footer-socials__list {
+  @include list-off;
+}
+
+.b-footer-socials__item:first-child {
+  margin-left: 0;
+}
+
+.b-footer-socials__item {
+  display: block;
+	width: 43px;
+	height: 43px;
+	float: left;
+  margin-left: 30px;
+}
+
+.b-footer-socials__link  {
+  display: block;
+	width: 43px;
+	height: 43px;
+}
+
+.b-footer-socials__fb {
+  background: url(../img/sprite-soc-footer.png) 0 0;
+
+  &:hover {
+    background: url(../img/sprite-soc-footer.png) 0 -47px;
+  }
+}
+
+.b-footer-socials__b {
+  background: url(../img/sprite-soc-footer.png) -47px 0;
+
+  &:hover {
+    background: url(../img/sprite-soc-footer.png) -47px 43px;
+  }
+}
+
+.b-footer-socials__tw {
+  background: url(../img/sprite-soc-footer.png) 43px 0;
+
+  &:hover {
+    background: url(../img/sprite-soc-footer.png) 43px -47px;
+  }
+}
+
+.b-footer-nav {
+  width: 530px;
+  float: right;
+  clear: right;
+}
+
+.b-footer-nav__menu {
+  @include list-off;
+}
+
+.b-footer-nav__menu__item:first-child {
+  margin-left: 175px;
+}
+
+.b-footer-nav__menu__item {
+  float: left;
+  margin-left: 22px;
+}
+
+.b-footer-nav__menu__link {
+  display: block;
+  padding: 0 0 20px 0;
+  color: $element-color;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $main-color;
+  }
+}
+
+.b-footer-copyright {
+  clear: both;
+  border-top: 1px solid $fbt-color;
+  padding: 8px 0;
+}
+
+.b-footer-copyright__text {
+  color: $element-color;
+  text-align: center;
+  font-size: 12px;
+}
