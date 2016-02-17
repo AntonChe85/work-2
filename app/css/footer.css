@@ -1,6 +1,10 @@
 .footer {
-  background: url(../img/bg.png);
+  background: url(../img/bg.png) #373737;
   min-width: 1110px;
+  color: #687078;
+  height: 220px;
+  margin-top: -220px;
+  position: relative;
   font-family: 'OpenSans', sans-serif; }
 
 .b-footer-left {

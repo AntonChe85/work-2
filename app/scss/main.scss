@@ -32,17 +32,22 @@ html {
   text-indent: -9999px;
 }
 
-.b-wrapper {
-  display: table;
-  height: 100%;
+.wrapper {
   min-width: 1110px;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.empty {
+  height: 220px;
 }
 
 .b-main-content {
-  display: table-row;
-  height: 100%;
+
 }
 
 @import "header";
+@import "sidebar";
 @import "content-text";
 @import "footer";

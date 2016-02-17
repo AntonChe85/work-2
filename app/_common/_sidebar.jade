@@ -1,0 +1,49 @@
+aside.b-sidebar
+  .b-accordeon
+    ul.accordeon__list
+      li.accordeon__item 
+        a(href="#").accordeon__trigger  
+          span.accordeon__text Наличае в магазинах
+        ul.accordeon__inner
+          li.accordeon__inner__item
+            form.form(action="#")
+              label
+                input(type="radio" class="form__input") 
+                p.form__text Во всех магазинах
+              label
+                input(type="radio" class="form__input") 
+                p.form__text В ближайшем ко мне магазине    
+      li.accordeon__item 
+        a(href="#").accordeon__trigger  
+          span.accordeon__text Бренды
+        ul.accordeon__inner
+          li.accordeon__inner__item
+            form.form(action="#")
+              each mob in ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola']
+                label
+                  input(type="checkbox" class="form__input") 
+                  p.form__text= mob 
+              a(href="#").form-button  Сбросить фильтр  
+      li.accordeon__item 
+        a(href="#").accordeon__trigger  
+          span.accordeon__text Цена
+        ul.accordeon__inner
+          li.accordeon__inner__item
+            span.accordeon__text Тест
+      li.accordeon__item 
+        a(href="#").accordeon__trigger  
+          span.accordeon__text Цвет
+        ul.accordeon__inner
+          li.accordeon__inner__item
+            span.accordeon__text Тест   
+      li.accordeon__item 
+        a(href="#").accordeon__trigger  
+          span.accordeon__text Операционные системы
+        ul.accordeon__inner
+          li.accordeon__inner__item
+            form.form(action="#")
+              each OS in ['Android', 'iOS', 'Windows Mobile', 'Symbian', 'Custom']
+                label
+                  input(type="checkbox" class="form__input") 
+                  p.form__text= OS 
+              a(href="#").form-button  Сбросить фильтр               

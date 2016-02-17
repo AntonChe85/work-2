@@ -36,16 +36,16 @@ $link-color: #333;
   @include list-off;
 }
 
-.header-contact__socials__item:first-child {
-  margin-left: 0;
-}
-
 .header-contact__socials__item {
   display: block;
 	width: 26px;
 	height: 26px;
 	float: left;
   margin-left: 15px;
+
+	&:first-child {
+	  margin-left: 0;
+	}
 }
 
 .header-contact__socials__link  {

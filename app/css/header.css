@@ -11,15 +11,15 @@
   margin: 0;
   list-style: none; }
 
-.header-contact__socials__item:first-child {
-  margin-left: 0; }
-
 .header-contact__socials__item {
   display: block;
   width: 26px;
   height: 26px;
   float: left;
   margin-left: 15px; }
+
+.header-contact__socials__item:first-child {
+  margin-left: 0; }
 
 .header-contact__socials__link {
   display: block;

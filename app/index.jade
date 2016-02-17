@@ -2,15 +2,26 @@ doctype html
 html(lang="ru")
 head
   meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible" content="IE-edge")
+  meta(name="viewport" width="1230" content="width=device-width, initial-scale=1")
+  meta(name="description" content="Услуги по созданию сайтов")
+  meta(name="keywords" content="WEB разработка, WEB development, верстка сайтов")
+  meta(name="author" content="Антон Черкасов")
   title my~online~store
+  link(rel="shortcut icon" href="img/icon-title.png" type="image/png")
   link(rel="stylesheet", href="bower/normalize-css/normalize.css")
   link(rel="stylesheet", href="css/main.css")
   link(rel="stylesheet", href="css/fonts.css")
-body
-  include  _common/_header.jade
-  .b-wrapper
-    .b-main-content
-  include  _common/_content-text.jade
+body    
+  .wrapper
+    include  _common/_header.jade 
+    .b-main-content 
+      .container  
+        include  _common/_sidebar.jade    
+        include  _common/_content-text.jade
+  .empty    
   include  _common/_footer.jade
+  script(src="bower/jquery/jquery.js") 
+  script(src="js/accordeon.js")
   
   

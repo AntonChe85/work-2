@@ -2,137 +2,233 @@
 <html lang="ru"></html>
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" width="1230" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Услуги по созданию сайтов">
+  <meta name="keywords" content="WEB разработка, WEB development, верстка сайтов">
+  <meta name="author" content="Антон Черкасов">
   <title>my~online~store</title>
+  <link rel="shortcut icon" href="img/icon-title.png" type="image/png">
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
 </head>
-<body>
-  <header class="header">
-    <div class="header-contact">
-      <div class="container clearfix">
-        <div class="header-contact__socials">
-          <ul class="header-contact__socials__list hidden-text clearfix">
-            <li class="header-contact__socials__item header-contact__socials__fb"> <a href="https://www.facebook.com/" target="_blank" class="header__socials__link">      <span class="header-contact__socials__text">facebook</span></a></li>
-            <li class="header-contact__socials__item header-contact__socials__b">     <a href="https://vk.com/" target="_blank" class="header-contact__socials__link"><span class="header-contact__socials__text">vkontakte</span></a></li>
-            <li class="header-contact__socials__item header-contact__socials__tw">      <a href="https://twitter.com/" target="_blank" class="header-contact__socials__link"><span class="header-contact__socials__text">twitter</span></a></li>
-          </ul>
-        </div>
-        <div class="header-contact__phone header-contact__phone_mod">  <span class="header-contact__phone-number">+7 (921) 123-12-13         </span></div>
-        <div class="header-contact__adress header-contact__adress_mod"><span class="header-contact__adress-adr">ул. Маяковская 6, оф 17</span></div>
-      </div>
-    </div>
-    <div class="header-search">
-      <div class="container clearfix">
-        <div class="header-search__logo"><a href="index.html" class="header-search__logo__link"><img src="img/logo-header.png" alt="#" title="Логотип" class="header-search__logo-img"><span class="header-search__logo-text"></span></a></div>
-        <form class="header-search__form header-search__form_mod">
-          <label for="search"> </label>
-          <input type="text" id="search" placeholder="Что будем искать" class="header-search__form__input">
-          <submit class="header-search__form__btn">Найти  </submit>
-        </form>
-        <div class="header-search__nav">
-          <ul class="header-search__nav__list">
-            <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">Карта проезда</span></a></li>
-            <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">История заказов</span></a></li>
-            <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">Корзина</span></a></li>
-          </ul>
+<body>   
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-contact">
+        <div class="container clearfix">
+          <div class="header-contact__socials">
+            <ul class="header-contact__socials__list hidden-text clearfix">
+              <li class="header-contact__socials__item header-contact__socials__fb"> <a href="https://www.facebook.com/" target="_blank" class="header__socials__link">      <span class="header-contact__socials__text">facebook</span></a></li>
+              <li class="header-contact__socials__item header-contact__socials__b">     <a href="https://vk.com/" target="_blank" class="header-contact__socials__link"><span class="header-contact__socials__text">vkontakte</span></a></li>
+              <li class="header-contact__socials__item header-contact__socials__tw">      <a href="https://twitter.com/" target="_blank" class="header-contact__socials__link"><span class="header-contact__socials__text">twitter</span></a></li>
+            </ul>
+          </div>
+          <div class="header-contact__phone header-contact__phone_mod">  <span class="header-contact__phone-number">+7 (921) 123-12-13         </span></div>
+          <div class="header-contact__adress header-contact__adress_mod"><span class="header-contact__adress-adr">ул. Маяковская 6, оф 17</span></div>
         </div>
       </div>
-    </div>
-    <div class="header-nav"> 
-      <div class="container">
-        <ul class="header-nav__menu header-nav__menu_mod clearfix">
-          <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Планшеты</span></a></li>
-          <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Мобильные телефоны</span></a></li>
-          <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Мр3 плееры</span></a></li>
-          <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Персональные компьютеры</span></a></li>
-          <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Ноутбуки</span></a></li>
-          <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Аксессуары</span></a></li>
-          <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Бытовая техника</span></a></li>
-        </ul>
+      <div class="header-search">
+        <div class="container clearfix">
+          <div class="header-search__logo"><a href="index.html" class="header-search__logo__link"><img src="img/logo-header.png" alt="#" title="Логотип" class="header-search__logo-img"><span class="header-search__logo-text"></span></a></div>
+          <form class="header-search__form header-search__form_mod">
+            <label for="search"> </label>
+            <input type="text" id="search" placeholder="Что будем искать" class="header-search__form__input">
+            <submit class="header-search__form__btn">Найти  </submit>
+          </form>
+          <div class="header-search__nav">
+            <ul class="header-search__nav__list">
+              <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">Карта проезда</span></a></li>
+              <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">История заказов</span></a></li>
+              <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">Корзина</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav"> 
+        <div class="container">
+          <ul class="header-nav__menu header-nav__menu_mod clearfix">
+            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Планшеты</span></a></li>
+            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Мобильные телефоны</span></a></li>
+            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Мр3 плееры</span></a></li>
+            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Персональные компьютеры</span></a></li>
+            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Ноутбуки</span></a></li>
+            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Аксессуары</span></a></li>
+            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Бытовая техника</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="b-main-content"> 
+      <div class="container"> 
+        <aside class="b-sidebar">
+          <div class="b-accordeon">
+            <ul class="accordeon__list">
+              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Наличае в магазинах</span></a>
+                <ul class="accordeon__inner">
+                  <li class="accordeon__inner__item">
+                    <form action="#" class="form">
+                      <label>
+                        <input type="radio" class="form__input">
+                        <p class="form__text">Во всех магазинах</p>
+                      </label>
+                      <label>
+                        <input type="radio" class="form__input">
+                        <p class="form__text">В ближайшем ко мне магазине    </p>
+                      </label>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Бренды</span></a>
+                <ul class="accordeon__inner">
+                  <li class="accordeon__inner__item">
+                    <form action="#" class="form">
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Lenovo</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Apple</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Samsung</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Asus</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Motorola</p>
+                      </label><a href="#" class="form-button"> Сбросить фильтр  </a>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цена</span></a>
+                <ul class="accordeon__inner">
+                  <li class="accordeon__inner__item"><span class="accordeon__text">Тест</span></li>
+                </ul>
+              </li>
+              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цвет</span></a>
+                <ul class="accordeon__inner">
+                  <li class="accordeon__inner__item"><span class="accordeon__text">Тест   </span></li>
+                </ul>
+              </li>
+              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Операционные системы</span></a>
+                <ul class="accordeon__inner">
+                  <li class="accordeon__inner__item">
+                    <form action="#" class="form">
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Android</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">iOS</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Windows Mobile</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Symbian</p>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="form__input">
+                        <p class="form__text">Custom</p>
+                      </label><a href="#" class="form-button"> Сбросить фильтр               </a>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="content-text">
+          <h1 class="content-text__title">Важная информация</h1>
+          <p class="content-text__col">
+             
+            Повседневная практика показывает, что начало повседневной работы 
+            по формированию позиции представляет собой интересный эксперимент 
+            проверки позиций, занимаемых участниками в отношении поставленных задач. 
+            Разнообразный и богатый опыт новая модель организационной деятельности 
+            требуют от нас анализа систем массового участия.Повседневная практика 
+            показывает, что сложившаяся структура организации способствует подготовки 
+            и реализации соответствующий условий активизации. Разнообразный и богатый 
+            опыт реализация намеченных плановых заданий требуют определения и уточнения 
+            дальнейших направлений развития.
+          </p>
+          <p class="content-text__col">
+             
+            Повседневная практика показывает, что начало повседневной работы 
+            по формированию позиции представляет собой интересный эксперимент 
+            проверки позиций, занимаемых участниками в отношении поставленных задач. 
+            Разнообразный и богатый опыт новая модель организационной деятельности 
+            требуют от нас анализа систем массового участия.Повседневная практика 
+            показывает, что сложившаяся структура организации способствует подготовки 
+            и реализации соответствующий условий активизации. Разнообразный и богатый 
+            опыт реализация намеченных плановых заданий требуют определения и уточнения 
+            дальнейших направлений развития.
+          </p>
+          <p class="content-text__col">
+             
+            Повседневная практика показывает, что начало повседневной работы 
+            по формированию позиции представляет собой интересный эксперимент 
+            проверки позиций, занимаемых участниками в отношении поставленных задач. 
+            Разнообразный и богатый опыт новая модель организационной деятельности 
+            требуют от нас анализа систем массового участия.Повседневная практика 
+            показывает, что сложившаяся структура организации способствует подготовки 
+            и реализации соответствующий условий активизации. Разнообразный и богатый 
+            опыт реализация намеченных плановых заданий требуют определения и уточнения 
+            дальнейших направлений развития.
+          </p>
+          <p class="content-text__col">
+             
+            Повседневная практика показывает, что начало повседневной работы 
+            по формированию позиции представляет собой интересный эксперимент 
+            проверки позиций, занимаемых участниками в отношении поставленных задач. 
+            Разнообразный и богатый опыт новая модель организационной деятельности 
+            требуют от нас анализа систем массового участия.Повседневная практика 
+            показывает, что сложившаяся структура организации способствует подготовки 
+            и реализации соответствующий условий активизации. Разнообразный и богатый 
+            опыт реализация намеченных плановых заданий требуют определения и уточнения 
+            дальнейших направлений развития.  
+          </p>
+          <p class="content-text__col">
+             
+            Повседневная практика показывает, что начало повседневной работы 
+            по формированию позиции представляет собой интересный эксперимент 
+            проверки позиций, занимаемых участниками в отношении поставленных задач. 
+            Разнообразный и богатый опыт новая модель организационной деятельности 
+            требуют от нас анализа систем массового участия.Повседневная практика 
+            показывает, что сложившаяся структура организации способствует подготовки 
+            и реализации соответствующий условий активизации. Разнообразный и богатый 
+            опыт реализация намеченных плановых заданий требуют определения и уточнения 
+            дальнейших направлений развития.
+          </p>
+          <p class="content-text__col">
+             
+            Повседневная практика показывает, что начало повседневной работы 
+            по формированию позиции представляет собой интересный эксперимент 
+            проверки позиций, занимаемых участниками в отношении поставленных задач. 
+            Разнообразный и богатый опыт новая модель организационной деятельности 
+            требуют от нас анализа систем массового участия.Повседневная практика 
+            показывает, что сложившаяся структура организации способствует подготовки 
+            и реализации соответствующий условий активизации. Разнообразный и богатый 
+            опыт реализация намеченных плановых заданий требуют определения и уточнения 
+            дальнейших направлений развития.  
+          </p>
+        </div>
       </div>
     </div>
-  </header>
-  <div class="b-wrapper">
-    <div class="b-main-content"></div>
   </div>
-  <div class="content-text">
-    <div class="container">
-      <h1 class="content-text__title">Важная информация</h1>
-      <p class="content-text__col">
-         
-        Повседневная практика показывает, что начало повседневной работы 
-        по формированию позиции представляет собой интересный эксперимент 
-        проверки позиций, занимаемых участниками в отношении поставленных задач. 
-        Разнообразный и богатый опыт новая модель организационной деятельности 
-        требуют от нас анализа систем массового участия.Повседневная практика 
-        показывает, что сложившаяся структура организации способствует подготовки 
-        и реализации соответствующий условий активизации. Разнообразный и богатый 
-        опыт реализация намеченных плановых заданий требуют определения и уточнения 
-        дальнейших направлений развития.
-      </p>
-      <p class="content-text__col">
-         
-        Повседневная практика показывает, что начало повседневной работы 
-        по формированию позиции представляет собой интересный эксперимент 
-        проверки позиций, занимаемых участниками в отношении поставленных задач. 
-        Разнообразный и богатый опыт новая модель организационной деятельности 
-        требуют от нас анализа систем массового участия.Повседневная практика 
-        показывает, что сложившаяся структура организации способствует подготовки 
-        и реализации соответствующий условий активизации. Разнообразный и богатый 
-        опыт реализация намеченных плановых заданий требуют определения и уточнения 
-        дальнейших направлений развития.
-      </p>
-      <p class="content-text__col">
-         
-        Повседневная практика показывает, что начало повседневной работы 
-        по формированию позиции представляет собой интересный эксперимент 
-        проверки позиций, занимаемых участниками в отношении поставленных задач. 
-        Разнообразный и богатый опыт новая модель организационной деятельности 
-        требуют от нас анализа систем массового участия.Повседневная практика 
-        показывает, что сложившаяся структура организации способствует подготовки 
-        и реализации соответствующий условий активизации. Разнообразный и богатый 
-        опыт реализация намеченных плановых заданий требуют определения и уточнения 
-        дальнейших направлений развития.
-      </p>
-      <p class="content-text__col">
-         
-        Повседневная практика показывает, что начало повседневной работы 
-        по формированию позиции представляет собой интересный эксперимент 
-        проверки позиций, занимаемых участниками в отношении поставленных задач. 
-        Разнообразный и богатый опыт новая модель организационной деятельности 
-        требуют от нас анализа систем массового участия.Повседневная практика 
-        показывает, что сложившаяся структура организации способствует подготовки 
-        и реализации соответствующий условий активизации. Разнообразный и богатый 
-        опыт реализация намеченных плановых заданий требуют определения и уточнения 
-        дальнейших направлений развития.  
-      </p>
-      <p class="content-text__col">
-         
-        Повседневная практика показывает, что начало повседневной работы 
-        по формированию позиции представляет собой интересный эксперимент 
-        проверки позиций, занимаемых участниками в отношении поставленных задач. 
-        Разнообразный и богатый опыт новая модель организационной деятельности 
-        требуют от нас анализа систем массового участия.Повседневная практика 
-        показывает, что сложившаяся структура организации способствует подготовки 
-        и реализации соответствующий условий активизации. Разнообразный и богатый 
-        опыт реализация намеченных плановых заданий требуют определения и уточнения 
-        дальнейших направлений развития.
-      </p>
-      <p class="content-text__col">
-         
-        Повседневная практика показывает, что начало повседневной работы 
-        по формированию позиции представляет собой интересный эксперимент 
-        проверки позиций, занимаемых участниками в отношении поставленных задач. 
-        Разнообразный и богатый опыт новая модель организационной деятельности 
-        требуют от нас анализа систем массового участия.Повседневная практика 
-        показывает, что сложившаяся структура организации способствует подготовки 
-        и реализации соответствующий условий активизации. Разнообразный и богатый 
-        опыт реализация намеченных плановых заданий требуют определения и уточнения 
-        дальнейших направлений развития.  
-      </p>
-    </div>
-  </div>
+  <div class="empty">   </div>
   <footer class="footer">
     <div class="container clearfix"> 
       <div class="b-footer-left"><a href="index.html" class="b-footer__logo__link"><img src="img/logo-footer.png" alt="#" title="Логотип" class="b-footer__logo-img b-footer__logo-img_mod"><span class="b-footer__logo-text"></span></a></div>
@@ -161,4 +257,6 @@
       <div class="b-footer-copyright__text">All rights reserved. 2015. no copy alowed          </div>
     </div>
   </footer>
+  <script src="bower/jquery/jquery.js"> </script>
+  <script src="js/accordeon.js"></script>
 </body>
