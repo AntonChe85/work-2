@@ -1,6 +1,9 @@
-.header {
+.b-header {
   min-width: 1110px;
   background-color: #fff; }
+
+.b-header_mod {
+  margin-bottom: 30px; }
 
 .header-contact__socials {
   float: left;
@@ -70,7 +73,7 @@
   font-family: 'OpenSans SemiBold', sans-serif;
   font-size: 16px; }
 
-.header-search {
+.b-header-search {
   background-color: #f4f4f4;
   padding: 25px;
   border-top: 2px solid #ebedef; }
@@ -110,6 +113,12 @@
   font-family: 'OpenSans SemiBold', sans-serif;
   font-size: 16px;
   cursor: pointer; }
+
+.header-search__form__btn:hover {
+  background: #ff8533; }
+
+.header-search__form__btn:active {
+  background: #ffa366; }
 
 ::-webkit-input-placeholder {
   color: #7f7f7f;
@@ -158,7 +167,7 @@
 .header-search__nav__link:active {
   color: #ff6600; }
 
-.header-nav {
+.b-header-nav {
   background-color: #fff;
   border-bottom: 2px solid #ebedef; }
 

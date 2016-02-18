@@ -22,9 +22,13 @@ $element-color: #fff;
 $input-color: #7f7f7f;
 $link-color: #333;
 
-.header {
+.b-header {
 	min-width: 1110px;
   background-color: $element-color;
+}
+
+.b-header_mod {
+	margin-bottom: 30px;
 }
 
 .header-contact__socials {
@@ -110,7 +114,7 @@ $link-color: #333;
   font-size: 16px;
 }
 
-.header-search {
+.b-header-search {
   background-color: $bg-color;
   padding: 25px;
   border-top: 2px solid $border-color;
@@ -157,11 +161,11 @@ $link-color: #333;
   cursor: pointer;
 
   &:hover {
-
+		background: lighten($main-color, 10%);
   }
 
   &:active {
-
+		background: lighten($main-color, 20%);
   }
 }
 
@@ -221,7 +225,7 @@ $link-color: #333;
     }
 }
 
-.header-nav {
+.b-header-nav {
   background-color: $element-color;
   border-bottom: 2px solid $border-color;
 }
@@ -257,7 +261,6 @@ $link-color: #333;
     color: $element-color;
     @include font-bold;
     font-size: 16px;
-
   }
 }
 

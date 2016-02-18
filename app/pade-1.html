@@ -15,8 +15,8 @@
 </head>
 <body>   
   <div class="wrapper">
-    <header class="header">
-      <div class="header-contact">
+    <header class="b-header b-header_mod">
+      <div class="b-header-contact">
         <div class="container clearfix">
           <div class="header-contact__socials">
             <ul class="header-contact__socials__list hidden-text clearfix">
@@ -29,7 +29,7 @@
           <div class="header-contact__adress header-contact__adress_mod"><span class="header-contact__adress-adr">ул. Маяковская 6, оф 17</span></div>
         </div>
       </div>
-      <div class="header-search">
+      <div class="b-header-search">
         <div class="container clearfix">
           <div class="header-search__logo"><a href="index.html" class="header-search__logo__link"><img src="img/logo-header.png" alt="#" title="Логотип" class="header-search__logo-img"><span class="header-search__logo-text"></span></a></div>
           <form class="header-search__form header-search__form_mod">
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div class="header-nav"> 
+      <div class="b-header-nav"> 
         <div class="container">
           <ul class="header-nav__menu header-nav__menu_mod clearfix">
             <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Планшеты</span></a></li>
@@ -60,9 +60,22 @@
         </div>
       </div>
     </header>
-    <div class="b-main-content"> 
-      <div class="container"> 
+    <div class="container"> 
+      <section class="b-breadcrumbs-wrap">
+        <ul class="breadcrumbs__list clearfix">
+          <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link"><span class="breadcrumbs__text">Главная</span></a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"><span class="breadcrumbs__text">Каталог    </span></a></li>
+        </ul>
+        <h2 class="b-breadcrumbs-wrap__title">Мобильные телефоны</h2>
+      </section>
+      <section class="b-maincontent-wrap">
         <aside class="b-sidebar">
+          <div class="b-choice">
+            <ul class="range__list">
+              <li class="range__item"><a href="#" class="range__link"><span class="range__text">Флагманы</span></a></li>
+              <li class="range__item"><a href="#" class="range__link"><span class="range__text">Бюджетная линейка</span></a></li>
+            </ul>
+          </div>
           <div class="b-accordeon">
             <ul class="accordeon__list">
               <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Наличае в магазинах</span></a>
@@ -104,7 +117,8 @@
                       <label>
                         <input type="checkbox" class="form__input">
                         <p class="form__text">Motorola</p>
-                      </label><a href="#" class="form-button"> Сбросить фильтр  </a>
+                      </label>
+                      <div class="form-btn-wrap">   <a href="#" class="form-button"> Сбросить фильтр  </a></div>
                     </form>
                   </li>
                 </ul>
@@ -116,7 +130,22 @@
               </li>
               <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цвет</span></a>
                 <ul class="accordeon__inner">
-                  <li class="accordeon__inner__item"><span class="accordeon__text">Тест   </span></li>
+                  <li class="accordeon__inner__item">
+                    <div class="box__list box__list_mod clearfix">
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                      <div class="box__item box__item_mod">      </div>
+                    </div>
+                  </li>
                 </ul>
               </li>
               <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Операционные системы</span></a>
@@ -142,7 +171,8 @@
                       <label>
                         <input type="checkbox" class="form__input">
                         <p class="form__text">Custom</p>
-                      </label><a href="#" class="form-button"> Сбросить фильтр               </a>
+                      </label>
+                      <div class="form-btn-wrap">   <a href="#" class="form-button">Сбросить фильтр                </a></div>
                     </form>
                   </li>
                 </ul>
@@ -150,8 +180,10 @@
             </ul>
           </div>
         </aside>
-        <div class="content-text">
-          <h1 class="content-text__title">Важная информация</h1>
+      </section>
+      <section class="b-content-text-wrap">
+        <h1 class="content-text__title">Важная информация</h1>
+        <div class="b-content-text"> 
           <p class="content-text__col">
              
             Повседневная практика показывает, что начало повседневной работы 
@@ -225,7 +257,7 @@
             дальнейших направлений развития.  
           </p>
         </div>
-      </div>
+      </section>
     </div>
   </div>
   <div class="empty">   </div>
