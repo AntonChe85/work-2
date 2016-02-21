@@ -31,31 +31,31 @@
 .b-footer-socials__item {
   display: block;
   width: 43px;
-  height: 43px;
+  height: 44px;
   float: left;
   margin-left: 30px; }
 
 .b-footer-socials__link {
   display: block;
   width: 43px;
-  height: 43px; }
+  height: 44px; }
 
-.b-footer-socials__fb {
+.b-footer-socials__link_fb {
   background: url(../img/sprite-soc-footer.png) 0 0; }
 
-.b-footer-socials__fb:hover {
+.b-footer-socials__link_fb:hover {
   background: url(../img/sprite-soc-footer.png) 0 -47px; }
 
-.b-footer-socials__b {
+.b-footer-socials__link_b {
   background: url(../img/sprite-soc-footer.png) -47px 0; }
 
-.b-footer-socials__b:hover {
+.b-footer-socials__link_b:hover {
   background: url(../img/sprite-soc-footer.png) -47px 43px; }
 
-.b-footer-socials__tw {
+.b-footer-socials__link_tw {
   background: url(../img/sprite-soc-footer.png) 43px 0; }
 
-.b-footer-socials__tw:hover {
+.b-footer-socials__link_tw:hover {
   background: url(../img/sprite-soc-footer.png) 43px -47px; }
 
 .b-footer-nav {

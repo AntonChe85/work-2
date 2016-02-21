@@ -1,3 +1,5 @@
+// --------- service selectors ----------
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -32,6 +34,12 @@ html {
   text-indent: -9999px;
 }
 
+// ---------- header --------------
+
+@import "header";
+
+// ---------- content -------------
+
 .wrapper {
   min-width: 1110px;
   min-height: 100%;
@@ -39,15 +47,18 @@ html {
   position: relative;
 }
 
+.b-maincontent-wrap {
+  margin-bottom: 50px;
+}
+
 .empty {
   height: 220px;
 }
 
-.b-main-content {
-
-}
-
-@import "header";
 @import "sidebar";
+@import "content-main";
 @import "content-text";
+
+// ---------- footer --------------
+
 @import "footer";

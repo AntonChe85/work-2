@@ -2,43 +2,44 @@ header.b-header.b-header_mod
   .b-header-contact
     .container.clearfix
       .header-contact__socials
-        ul.header-contact__socials__list.hidden-text.clearfix
-          li.header-contact__socials__item.header-contact__socials__fb  
-            a(href="https://www.facebook.com/" target="_blank").header__socials__link       
-              span.header-contact__socials__text facebook
-          li.header-contact__socials__item.header-contact__socials__b      
-            a(href="https://vk.com/" target="_blank").header-contact__socials__link
-              span.header-contact__socials__text vkontakte
-          li.header-contact__socials__item.header-contact__socials__tw       
-            a(href="https://twitter.com/" target="_blank").header-contact__socials__link
-              span.header-contact__socials__text twitter
-      .header-contact__phone.header-contact__phone_mod   
-        span.header-contact__phone-number +7 (921) 123-12-13         
+        ul.header-contact__socials-list.hidden-text.clearfix
+          li.header-contact__socials-item 
+            a(href="https://www.facebook.com/" target="_blank").header-contact__socials-link.header-contact__socials-link_fb        
+              span.header-contact__socials-text facebook
+          li.header-contact__socials-item     
+            a(href="https://vk.com/" target="_blank").header-contact__socials-link.header-contact__socials-link_b
+              span.header-contact__socials-text vkontakte
+          li.header-contact__socials-item       
+            a(href="https://twitter.com/" target="_blank").header-contact__socials-link.header-contact__socials-link_tw
+              span.header-contact__socials-text twitter
+      .header-contact__phone.header-contact__phone_mod  
+        a(href="tel:+79211231213").header-contact__phone-link 
+          span.header-contact__phone-number +7 (921) 123-12-13         
       .header-contact__adress.header-contact__adress_mod
         span.header-contact__adress-adr ул. Маяковская 6, оф 17
   .b-header-search
     .container.clearfix
       .header-search__logo
-        a(href="index.html").header-search__logo__link
+        a(href="index.html").header-search__logo-link
           img(src="img/logo-header.png", alt="#", title="Логотип").header-search__logo-img
-          span.header-search__logo-text
+          span.header-search__logo-text.hidden-text COOTECH
       form.header-search__form.header-search__form_mod
         label(for="search")  
-        input(type="text" id="search" placeholder="Что будем искать").header-search__form__input  
-        submit.header-search__form__btn Найти  
+        input(type="text" id="search" placeholder="Что будем искать").header-search__form-input  
+        submit.header-search__form-btn Найти  
       .header-search__nav
-        ul.header-search__nav__list
+        ul.header-search__nav-list
           each nav in ['Карта проезда', 'История заказов', 'Корзина']
-            li.header-search__nav__item 
-              a(href="#").header-search__nav__link  
-                span.header-search__nav__text= nav              
+            li.header-search__nav-item 
+              a(href="#").header-search__nav-link  
+                span.header-search__nav-text= nav              
   .b-header-nav 
     .container
       ul.header-nav__menu.header-nav__menu_mod.clearfix
         each menu in ['Планшеты', 'Мобильные телефоны', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
-          li.header-nav__menu__item
-            a(href="#").header-nav__menu__link
-              span.header-nav__menu__text= menu
+          li.header-nav__menu-item
+            a(href="#").header-nav__menu-link
+              span.header-nav__menu-text= menu
       
       
      

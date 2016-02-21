@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <script src="bower/html5shiv/dist/html5shiv.js"></script>
 </head>
 <body>   
   <div class="wrapper">
@@ -19,29 +20,29 @@
       <div class="b-header-contact">
         <div class="container clearfix">
           <div class="header-contact__socials">
-            <ul class="header-contact__socials__list hidden-text clearfix">
-              <li class="header-contact__socials__item header-contact__socials__fb"> <a href="https://www.facebook.com/" target="_blank" class="header__socials__link">      <span class="header-contact__socials__text">facebook</span></a></li>
-              <li class="header-contact__socials__item header-contact__socials__b">     <a href="https://vk.com/" target="_blank" class="header-contact__socials__link"><span class="header-contact__socials__text">vkontakte</span></a></li>
-              <li class="header-contact__socials__item header-contact__socials__tw">      <a href="https://twitter.com/" target="_blank" class="header-contact__socials__link"><span class="header-contact__socials__text">twitter</span></a></li>
+            <ul class="header-contact__socials-list hidden-text clearfix">
+              <li class="header-contact__socials-item"> <a href="https://www.facebook.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_fb">       <span class="header-contact__socials-text">facebook</span></a></li>
+              <li class="header-contact__socials-item">    <a href="https://vk.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_b"><span class="header-contact__socials-text">vkontakte</span></a></li>
+              <li class="header-contact__socials-item">      <a href="https://twitter.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_tw"><span class="header-contact__socials-text">twitter</span></a></li>
             </ul>
           </div>
-          <div class="header-contact__phone header-contact__phone_mod">  <span class="header-contact__phone-number">+7 (921) 123-12-13         </span></div>
+          <div class="header-contact__phone header-contact__phone_mod"> <a href="tel:+79211231213" class="header-contact__phone-link"> <span class="header-contact__phone-number">+7 (921) 123-12-13         </span></a></div>
           <div class="header-contact__adress header-contact__adress_mod"><span class="header-contact__adress-adr">ул. Маяковская 6, оф 17</span></div>
         </div>
       </div>
       <div class="b-header-search">
         <div class="container clearfix">
-          <div class="header-search__logo"><a href="index.html" class="header-search__logo__link"><img src="img/logo-header.png" alt="#" title="Логотип" class="header-search__logo-img"><span class="header-search__logo-text"></span></a></div>
+          <div class="header-search__logo"><a href="index.html" class="header-search__logo-link"><img src="img/logo-header.png" alt="#" title="Логотип" class="header-search__logo-img"><span class="header-search__logo-text hidden-text">COOTECH</span></a></div>
           <form class="header-search__form header-search__form_mod">
             <label for="search"> </label>
-            <input type="text" id="search" placeholder="Что будем искать" class="header-search__form__input">
-            <submit class="header-search__form__btn">Найти  </submit>
+            <input type="text" id="search" placeholder="Что будем искать" class="header-search__form-input">
+            <submit class="header-search__form-btn">Найти  </submit>
           </form>
           <div class="header-search__nav">
-            <ul class="header-search__nav__list">
-              <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">Карта проезда</span></a></li>
-              <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">История заказов</span></a></li>
-              <li class="header-search__nav__item"> <a href="#" class="header-search__nav__link"> <span class="header-search__nav__text">Корзина</span></a></li>
+            <ul class="header-search__nav-list">
+              <li class="header-search__nav-item"> <a href="#" class="header-search__nav-link"> <span class="header-search__nav-text">Карта проезда</span></a></li>
+              <li class="header-search__nav-item"> <a href="#" class="header-search__nav-link"> <span class="header-search__nav-text">История заказов</span></a></li>
+              <li class="header-search__nav-item"> <a href="#" class="header-search__nav-link"> <span class="header-search__nav-text">Корзина</span></a></li>
             </ul>
           </div>
         </div>
@@ -49,26 +50,26 @@
       <div class="b-header-nav"> 
         <div class="container">
           <ul class="header-nav__menu header-nav__menu_mod clearfix">
-            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Планшеты</span></a></li>
-            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Мобильные телефоны</span></a></li>
-            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Мр3 плееры</span></a></li>
-            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Персональные компьютеры</span></a></li>
-            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Ноутбуки</span></a></li>
-            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Аксессуары</span></a></li>
-            <li class="header-nav__menu__item"><a href="#" class="header-nav__menu__link"><span class="header-nav__menu__text">Бытовая техника</span></a></li>
+            <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link"><span class="header-nav__menu-text">Планшеты</span></a></li>
+            <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link"><span class="header-nav__menu-text">Мобильные телефоны</span></a></li>
+            <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link"><span class="header-nav__menu-text">Мр3 плееры</span></a></li>
+            <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link"><span class="header-nav__menu-text">Персональные компьютеры</span></a></li>
+            <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link"><span class="header-nav__menu-text">Ноутбуки</span></a></li>
+            <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link"><span class="header-nav__menu-text">Аксессуары</span></a></li>
+            <li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link"><span class="header-nav__menu-text">Бытовая техника</span></a></li>
           </ul>
         </div>
       </div>
     </header>
     <div class="container"> 
-      <section class="b-breadcrumbs-wrap">
-        <ul class="breadcrumbs__list clearfix">
-          <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link"><span class="breadcrumbs__text">Главная</span></a></li>
-          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"><span class="breadcrumbs__text">Каталог    </span></a></li>
-        </ul>
-        <h2 class="b-breadcrumbs-wrap__title">Мобильные телефоны</h2>
-      </section>
-      <section class="b-maincontent-wrap">
+      <section class="b-maincontent-wrap clearfix"> 
+        <section class="b-breadcrumbs-wrap">
+          <ul class="breadcrumbs__list clearfix">
+            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link"><span class="breadcrumbs__text">Главная</span></a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"><span class="breadcrumbs__text">Каталог    </span></a></li>
+          </ul>
+          <h2 class="b-breadcrumbs-wrap__title">Мобильные телефоны</h2>
+        </section>
         <aside class="b-sidebar">
           <div class="b-choice">
             <ul class="range__list">
@@ -76,116 +77,178 @@
               <li class="range__item"><a href="#" class="range__link"><span class="range__text">Бюджетная линейка</span></a></li>
             </ul>
           </div>
-          <div class="b-accordeon">
-            <ul class="accordeon__list">
-              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Наличае в магазинах</span></a>
-                <ul class="accordeon__inner">
-                  <li class="accordeon__inner__item">
-                    <form action="#" class="form">
-                      <label>
-                        <input type="radio" class="form__input">
-                        <p class="form__text">Во всех магазинах</p>
-                      </label>
-                      <label>
-                        <input type="radio" class="form__input">
-                        <p class="form__text">В ближайшем ко мне магазине    </p>
-                      </label>
-                    </form>
-                  </li>
-                </ul>
-              </li>
-              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Бренды</span></a>
-                <ul class="accordeon__inner">
-                  <li class="accordeon__inner__item">
-                    <form action="#" class="form">
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Lenovo</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Apple</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Samsung</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Asus</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Motorola</p>
-                      </label>
-                      <div class="form-btn-wrap">   <a href="#" class="form-button"> Сбросить фильтр  </a></div>
-                    </form>
-                  </li>
-                </ul>
-              </li>
-              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цена</span></a>
-                <ul class="accordeon__inner">
-                  <li class="accordeon__inner__item"><span class="accordeon__text">Тест</span></li>
-                </ul>
-              </li>
-              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цвет</span></a>
-                <ul class="accordeon__inner">
-                  <li class="accordeon__inner__item">
-                    <div class="box__list box__list_mod clearfix">
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                      <div class="box__item box__item_mod">      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Операционные системы</span></a>
-                <ul class="accordeon__inner">
-                  <li class="accordeon__inner__item">
-                    <form action="#" class="form">
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Android</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">iOS</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Windows Mobile</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Symbian</p>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="form__input">
-                        <p class="form__text">Custom</p>
-                      </label>
-                      <div class="form-btn-wrap">   <a href="#" class="form-button">Сбросить фильтр                </a></div>
-                    </form>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          <div class="b-accordeon-wrap">                  
+            <div class="b-accordeon">
+              <ul class="accordeon__list">
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Наличае в магазинах</span></a>
+                  <ul class="accordeon__inner">
+                    <li class="accordeon__inner-item">
+                      <form action="#" method="post">
+                        <label>
+                          <input type="radio" class="form__input">
+                          <p class="form__text">Во всех магазинах</p>
+                        </label>
+                        <label>
+                          <input type="radio" class="form__input">
+                          <p class="form__text">В ближайшем ко мне магазине    </p>
+                        </label>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Бренды</span></a>
+                  <ul class="accordeon__inner">
+                    <li class="accordeon__inner-item">
+                      <form action="#" method="post">
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Lenovo</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Apple</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Samsung</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Asus</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Motorola</p>
+                        </label>
+                        <div class="form-btn-wrap">   <a href="#" class="form-button"> Сбросить фильтр  </a></div>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цена</span></a>
+                  <ul class="accordeon__inner">
+                    <li class="accordeon__inner-item"><span class="accordeon__text">Тест</span></li>
+                  </ul>
+                </li>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цвет</span></a>
+                  <ul class="accordeon__inner">
+                    <li class="accordeon__inner-item">
+                      <div class="box__list box__list_mod clearfix">
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                        <div class="box__item box__item_mod">      </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Операционные системы</span></a>
+                  <ul class="accordeon__inner">
+                    <li class="accordeon__inner-item">
+                      <form action="#" class="form">
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Android</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">iOS</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Windows Mobile</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Symbian</p>
+                        </label>
+                        <label>
+                          <input type="checkbox" class="form__input">
+                          <p class="form__text">Custom</p>
+                        </label>
+                        <div class="form-btn-wrap">   <a href="#" class="form-button">Сбросить фильтр                </a></div>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </aside>
+        <div id="b-catalog">
+          <div class="b-catalog-switch clearfix">
+            <div class="b-form-wrap">
+              <form action="#" method="post">
+                <label class="catalog-switch__label catalog-switch__label_mod"> <span class="catalog-switch__text">Сортировать по</span>
+                  <select name="" class="catalog-switch__select catalog-switch__select_mod"> 
+                    <option value="по цене">по цене </option>
+                    <option>по цене</option>
+                    <option>по цене</option>
+                  </select>
+                </label>
+              </form>
+            </div><span class="catalog-switch__text catalog-switch__text_mod-right">Вид каталога</span>
+            <div class="b-wrap-catalog-switch clearfix"> 
+              <div class="catalog-switch__item active"><a href="#" class="catalog-switch__link catalog-switch__link_mod-left"> </a></div>
+              <div class="catalog-switch__item"><a href="#" class="catalog-switch__link catalog-switch__link_mod-center"> </a></div>
+              <div class="catalog-switch__item"><a href="#" class="catalog-switch__link catalog-switch__link_mod-right">  </a></div>
+            </div>
+          </div>
+          <div class="b-catalog-content">
+            <div class="catalog-content__item active">
+              <ul class="catalog-content__list-1">
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1">          </a></li>
+              </ul>
+            </div>
+            <div class="catalog-content__item">
+              <ul class="catalog-content__list-2">
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"> </a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"> </a></li>
+              </ul>
+            </div>
+            <div class="catalog-content__item">
+              <ul class="catalog-content__list-3 clearfix">
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"></a></li>
+                <li class="catalog-content__elem-3"><a href="#" class="catalog-content__link-3"> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="b-content-text-wrap">
+      <section class="b-content-text-wrap clearfix">
         <h1 class="content-text__title">Важная информация</h1>
         <div class="b-content-text"> 
           <p class="content-text__col">
-             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -197,7 +260,6 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
-             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -209,7 +271,6 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
-             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -221,7 +282,6 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
-             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -233,7 +293,6 @@
             дальнейших направлений развития.  
           </p>
           <p class="content-text__col">
-             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -245,7 +304,6 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
-             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -260,16 +318,16 @@
       </section>
     </div>
   </div>
-  <div class="empty">   </div>
+  <div class="empty"> </div>
   <footer class="footer">
     <div class="container clearfix"> 
       <div class="b-footer-left"><a href="index.html" class="b-footer__logo__link"><img src="img/logo-footer.png" alt="#" title="Логотип" class="b-footer__logo-img b-footer__logo-img_mod"><span class="b-footer__logo-text"></span></a></div>
       <div class="b-footer-right clearfix">
         <div class="b-footer-socials">
           <ul class="b-footer-socials__list hidden-text clearfix">
-            <li class="b-footer-socials__item b-footer-socials__fb"> <a href="https://www.facebook.com/" target="_blank" class="b-footer-socials__link">      <span class="b-footer-socials__text">facebook</span></a></li>
-            <li class="b-footer-socials__item b-footer-socials__b">     <a href="https://vk.com/" target="_blank" class="b-footer-socials__link"><span class="b-footer-socials__text">vkontakte</span></a></li>
-            <li class="b-footer-socials__item b-footer-socials__tw">      <a href="https://twitter.com/" target="_blank" class="b-footer-socials__link"><span class="b-footer-socials__text">twitter</span></a></li>
+            <li class="b-footer-socials__item"> <a href="https://www.facebook.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_fb">      <span class="b-footer-socials__text">facebook</span></a></li>
+            <li class="b-footer-socials__item">    <a href="https://vk.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_b"> <span class="b-footer-socials__text">vkontakte</span></a></li>
+            <li class="b-footer-socials__item">     <a href="https://twitter.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_tw"><span class="b-footer-socials__text">twitter</span></a></li>
           </ul>
         </div>
         <div class="b-footer-nav">
@@ -291,4 +349,6 @@
   </footer>
   <script src="bower/jquery/jquery.js"> </script>
   <script src="js/accordeon.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
 </body>

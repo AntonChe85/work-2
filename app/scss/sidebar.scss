@@ -42,6 +42,7 @@ $box12-color: #7f401d;
 
 .b-sidebar {
   width: 330px;
+	float: left;
 }
 
 .b-breadcrumbs-wrap {
@@ -124,12 +125,16 @@ $box12-color: #7f401d;
   color: $bc-color;
 }
 
-.b-accordeon {
+.b-accordeon-wrap {
+	border: 1px solid #dee1e4;
+	overflow: hidden;
 	@include border-radius;
-  width: 330px;
-	// border: 1px solid #dee1e4;
-  // overflow: hidden;
+}
+
+.b-accordeon {
+  max-width: 100%;
   background-color: #fbfbfb;
+	margin: -17px 0; // hak
 }
 
 .accordeon__trigger {
@@ -160,7 +165,7 @@ margin-left: -40px;
 
 .accordeon__item  {
   border-bottom: 1px solid #dee1e4;
-  width: 100%;
+  max-width: 100%;
   margin-left: 0px;
   list-style-type: none;
 }
@@ -172,11 +177,11 @@ margin-left: -40px;
 }
 
 .box__list_mod {
-	margin: 0 0 -5px 30px;
+	margin: 0 0 -5px 10px;
 }
 
 .box__item_mod {
-	margin: 0 20px 20px 0;
+	margin: 0 0 20px 20px;
 }
 
 .box__item {
@@ -185,7 +190,7 @@ margin-left: -40px;
 	height: 35px;
 	border: 1px solid #dee1e4;
 
-// обводка цветных блоков
+// обводка цветных блоков - не работает !!!
 	&:focus,
 	:active:focus {
 		outline-color: 2px solid #fdac75;
@@ -258,7 +263,7 @@ margin-left: -40px;
 }
 
 .form-btn-wrap {
-
+	margin-bottom: 20px;
 }
 
 .form-button_mod {

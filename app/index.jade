@@ -12,15 +12,20 @@ head
   link(rel="stylesheet", href="bower/normalize-css/normalize.css")
   link(rel="stylesheet", href="css/main.css")
   link(rel="stylesheet", href="css/fonts.css")
+  script(src="bower/html5shiv/dist/html5shiv.js")
 body    
   .wrapper
     include  _common/_header.jade 
     .container  
-        include  _common/_sidebar.jade    
-        include  _common/_content-text.jade
-  .empty    
+      section.b-maincontent-wrap.clearfix 
+        include  _common/_sidebar.jade  
+        include  _common/_content-main.jade  
+      include  _common/_content-text.jade
+  .empty  
   include  _common/_footer.jade
   script(src="bower/jquery/jquery.js") 
   script(src="js/accordeon.js")
+  script(src="js/content.js")
+  script(src="js/main.js")
   
   

@@ -61,7 +61,7 @@ $link-color: #333;
 .b-footer-socials__item {
   display: block;
 	width: 43px;
-	height: 43px;
+	height: 44px;
 	float: left;
   margin-left: 30px;
 }
@@ -69,10 +69,10 @@ $link-color: #333;
 .b-footer-socials__link  {
   display: block;
 	width: 43px;
-	height: 43px;
+	height: 44px;
 }
 
-.b-footer-socials__fb {
+.b-footer-socials__link_fb {
   background: url(../img/sprite-soc-footer.png) 0 0;
 
   &:hover {
@@ -80,7 +80,7 @@ $link-color: #333;
   }
 }
 
-.b-footer-socials__b {
+.b-footer-socials__link_b {
   background: url(../img/sprite-soc-footer.png) -47px 0;
 
   &:hover {
@@ -88,7 +88,7 @@ $link-color: #333;
   }
 }
 
-.b-footer-socials__tw {
+.b-footer-socials__link_tw {
   background: url(../img/sprite-soc-footer.png) 43px 0;
 
   &:hover {
