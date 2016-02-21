@@ -6,12 +6,8 @@
 }
 
 .b-content-text {
-	-moz-column-count: 2; /* Для Firefox */
-  -webkit-column-count: 2; /* Для Safari и Chrome */
-  column-count: 2;
   font-size: 13px;
   @include font-main;
-	text-align: justify;
 	margin-bottom: 30px;
 }
 

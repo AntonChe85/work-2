@@ -190,10 +190,11 @@ margin-left: -40px;
 	height: 35px;
 	border: 1px solid #dee1e4;
 
+
+
 // обводка цветных блоков - не работает !!!
-	&:focus,
-	:active:focus {
-		outline-color: 2px solid #fdac75;
+	&:hover {
+		box-shadow: 0 0 0 2px $main-color;
 	}
 
 	&:nth-child(1) {

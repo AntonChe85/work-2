@@ -10,6 +10,8 @@
   <title>my~online~store</title>
   <link rel="shortcut icon" href="img/icon-title.png" type="image/png">
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="bower/select2/dist/css/select2.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
   <script src="bower/html5shiv/dist/html5shiv.js"></script>
@@ -127,7 +129,15 @@
                 </li>
                 <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цена</span></a>
                   <ul class="accordeon__inner">
-                    <li class="accordeon__inner-item"><span class="accordeon__text">Тест</span></li>
+                    <li class="accordeon__inner-item">
+                      <p>
+                        <label for="amount-1">От:</label>
+                        <input type="text" id="amount-1">
+                        <label for="amount-2">До:</label>
+                        <input type="text" id="amount-2">
+                      </p>
+                      <div id="slider-range"></div>
+                    </li>
                   </ul>
                 </li>
                 <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цвет</span></a>
@@ -189,7 +199,7 @@
               <form action="#" method="post">
                 <label class="catalog-switch__label catalog-switch__label_mod"> <span class="catalog-switch__text">Сортировать по</span>
                   <select name="" class="catalog-switch__select catalog-switch__select_mod"> 
-                    <option value="по цене">по цене </option>
+                    <option>по цене </option>
                     <option>по цене</option>
                     <option>по цене</option>
                   </select>
@@ -218,7 +228,16 @@
             </div>
             <div class="catalog-content__item">
               <ul class="catalog-content__list-2">
-                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
+                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2">
+                    <div class="b-slideshow">
+                      <div class="b-slideshow-main"><img src="img/phone-1.png" class="slideshow-main__img"></div>
+                      <ul class="slideshow__list clearfix">
+                        <li class="slideshow__item slideshow__item_mod">    <a href="#" class="slideshow__link"> <img src="img/phone-1-1.png" alt="#" class="slideshow__img"></a></li>
+                        <li class="slideshow__item">    <a href="#" class="slideshow__link"> <img src="img/phone-1-2.png" alt="#" class="slideshow__img"></a></li>
+                        <li class="slideshow__item">    <a href="#" class="slideshow__link"> <img src="img/phone-1-3.png" alt="#" class="slideshow__img"></a></li>
+                      </ul>
+                      <p>Артикул <span>189238                      </span></p>
+                    </div></a></li>
                 <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
                 <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
                 <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
@@ -249,6 +268,7 @@
         <h1 class="content-text__title">Важная информация</h1>
         <div class="b-content-text"> 
           <p class="content-text__col">
+             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -260,6 +280,7 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
+             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -271,6 +292,7 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
+             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -282,6 +304,7 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
+             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -293,6 +316,7 @@
             дальнейших направлений развития.  
           </p>
           <p class="content-text__col">
+             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -304,6 +328,7 @@
             дальнейших направлений развития.
           </p>
           <p class="content-text__col">
+             
             Повседневная практика показывает, что начало повседневной работы 
             по формированию позиции представляет собой интересный эксперимент 
             проверки позиций, занимаемых участниками в отношении поставленных задач. 
@@ -348,7 +373,14 @@
     </div>
   </footer>
   <script src="bower/jquery/jquery.js"> </script>
+  <script src="bower/jquery-ui/jquery-ui.js"></script>
+  <script src="bower/select2/dist/js/select2.js"></script>
+  <script src="bower/columnizer/src/jquery.columnizer.js"></script>
   <script src="js/accordeon.js"></script>
   <script src="js/content.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/select2.js"></script>
+  <script src="js/colomnizer.js"></script>
   <script src="js/main.js"></script>
 </body>

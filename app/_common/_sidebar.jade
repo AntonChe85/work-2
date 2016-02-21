@@ -46,7 +46,12 @@ aside.b-sidebar
               span.accordeon__text Цена
             ul.accordeon__inner
               li.accordeon__inner-item
-                span.accordeon__text Тест
+                p
+                  label(for="amount-1") От:
+                  input(type="text")#amount-1
+                  label(for="amount-2") До:
+                  input(type="text")#amount-2
+                #slider-range
           li.accordeon__item 
             a(href="#").accordeon__trigger  
               span.accordeon__text Цвет

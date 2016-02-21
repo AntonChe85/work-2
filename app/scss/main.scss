@@ -31,7 +31,9 @@ html {
 }
 
 .hidden-text {
-  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  left: -9999px;
 }
 
 // ---------- header --------------

@@ -127,9 +127,8 @@
   height: 35px;
   border: 1px solid #dee1e4; }
 
-.box__item:focus,
-.box__item :active:focus {
-  outline-color: 2px solid #fdac75; }
+.box__item:hover {
+  box-shadow: 0 0 0 2px #ff6600; }
 
 .box__item:nth-child(1) {
   background-color: #fff; }
