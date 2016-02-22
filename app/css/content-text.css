@@ -1,12 +1,20 @@
-.b-content-text {
-  font-size: 13px;
-  font-family: 'OpenSans', sans-serif;
-  margin-bottom: 30px; }
-
 .content-text__title {
   color: #333;
   font-family: 'OpenSans SemiBold', sans-serif;
   font-size: 18px; }
 
-.content-text__col {
+.b-content-text {
+  font-size: 13px;
+  font-family: 'OpenSans', sans-serif;
+  margin-bottom: 30px;
+  text-align: justify; }
+
+.column {
+  width: 48% !important;
   text-indent: 3em; }
+
+.first {
+  float: left !important; }
+
+.last {
+  float: right !important; }

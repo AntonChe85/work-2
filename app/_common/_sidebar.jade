@@ -34,12 +34,19 @@ aside.b-sidebar
               span.accordeon__text Бренды
             ul.accordeon__inner
               li.accordeon__inner-item
-                form(action="#" method="post")
-                  each mob in ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola']
-                    label
-                      input(type="checkbox" class="form__input") 
-                      p.form__text= mob 
-                  .form-btn-wrap    
+                .form-wrap
+                  form(action="#" method="post")
+                    label(for="form__input") Lenovo                   
+                    input(type="checkbox")#form__input.form__input
+                    label(for="form__input") Apple                   
+                    input(type="checkbox")#form__input.form__input
+                    label(for="form__input") Samsung                   
+                    input(type="checkbox")#form__input.form__input
+                    label(for="form__input") Asus                   
+                    input(type="checkbox")#form__input.form__input
+                    label(for="form__input") Motorola                   
+                    input(type="checkbox")#form__input.form__input   
+                    .form-btn-wrap    
                     a(href="#").form-button  Сбросить фильтр  
           li.accordeon__item 
             a(href="#").accordeon__trigger  
@@ -47,10 +54,12 @@ aside.b-sidebar
             ul.accordeon__inner
               li.accordeon__inner-item
                 p
-                  label(for="amount-1") От:
-                  input(type="text")#amount-1
-                  label(for="amount-2") До:
-                  input(type="text")#amount-2
+                  label(for="amount-1").accordeon__inner-item_label-left 
+                  span от
+                  input(type="text").accordeon__inner-item_input-slider#amount-1
+                  label(for="amount-2").accordeon__inner-item_label-right 
+                  span до
+                  input(type="text").accordeon__inner-item_input-slider#amount-2
                 #slider-range
           li.accordeon__item 
             a(href="#").accordeon__trigger  

@@ -59,7 +59,7 @@
   background: url(../img/sprite-soc-footer.png) 43px -47px; }
 
 .b-footer-nav {
-  width: 530px;
+  width: 520px;
   float: right;
   clear: right; }
 
@@ -69,7 +69,7 @@
   list-style: none; }
 
 .b-footer-nav__menu__item:first-child {
-  margin-left: 175px; }
+  margin-left: 180px; }
 
 .b-footer-nav__menu__item {
   float: left;

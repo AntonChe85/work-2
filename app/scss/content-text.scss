@@ -5,18 +5,29 @@
 	font-family: 'OpenSans SemiBold', sans-serif;
 }
 
-.b-content-text {
-  font-size: 13px;
-  @include font-main;
-	margin-bottom: 30px;
-}
-
 .content-text__title {
   color: #333;
   @include font-bold;
   font-size: 18px;
+
 }
 
-.content-text__col {
+.b-content-text {
+  font-size: 13px;
+  @include font-main;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.column {
+	width: 48% !important;
 	text-indent: 3em;
+}
+
+.first {
+	float: left !important;
+}
+
+.last {
+	float: right !important;
 }

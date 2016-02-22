@@ -22,10 +22,10 @@
       <div class="b-header-contact">
         <div class="container clearfix">
           <div class="header-contact__socials">
-            <ul class="header-contact__socials-list hidden-text clearfix">
-              <li class="header-contact__socials-item"> <a href="https://www.facebook.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_fb">       <span class="header-contact__socials-text">facebook</span></a></li>
-              <li class="header-contact__socials-item">    <a href="https://vk.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_b"><span class="header-contact__socials-text">vkontakte</span></a></li>
-              <li class="header-contact__socials-item">      <a href="https://twitter.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_tw"><span class="header-contact__socials-text">twitter</span></a></li>
+            <ul class="header-contact__socials-list clearfix">
+              <li class="header-contact__socials-item"> <a href="https://www.facebook.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_fb">       <span class="header-contact__socials-text hidden-text">facebook</span></a></li>
+              <li class="header-contact__socials-item">    <a href="https://vk.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_b"><span class="header-contact__socials-text hidden-text">vkontakte</span></a></li>
+              <li class="header-contact__socials-item">      <a href="https://twitter.com/" target="_blank" class="header-contact__socials-link header-contact__socials-link_tw"><span class="header-contact__socials-text hidden-text">twitter</span></a></li>
             </ul>
           </div>
           <div class="header-contact__phone header-contact__phone_mod"> <a href="tel:+79211231213" class="header-contact__phone-link"> <span class="header-contact__phone-number">+7 (921) 123-12-13         </span></a></div>
@@ -101,29 +101,21 @@
                 <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Бренды</span></a>
                   <ul class="accordeon__inner">
                     <li class="accordeon__inner-item">
-                      <form action="#" method="post">
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Lenovo</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Apple</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Samsung</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Asus</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Motorola</p>
-                        </label>
-                        <div class="form-btn-wrap">   <a href="#" class="form-button"> Сбросить фильтр  </a></div>
-                      </form>
+                      <div class="form-wrap">
+                        <form action="#" method="post">
+                          <label for="form__input">Lenovo                   </label>
+                          <input type="checkbox" id="form__input" class="form__input">
+                          <label for="form__input">Apple                   </label>
+                          <input type="checkbox" id="form__input" class="form__input">
+                          <label for="form__input">Samsung                   </label>
+                          <input type="checkbox" id="form__input" class="form__input">
+                          <label for="form__input">Asus                   </label>
+                          <input type="checkbox" id="form__input" class="form__input">
+                          <label for="form__input">Motorola                   </label>
+                          <input type="checkbox" id="form__input" class="form__input">
+                          <div class="form-btn-wrap">   </div><a href="#" class="form-button"> Сбросить фильтр  </a>
+                        </form>
+                      </div>
                     </li>
                   </ul>
                 </li>
@@ -131,10 +123,10 @@
                   <ul class="accordeon__inner">
                     <li class="accordeon__inner-item">
                       <p>
-                        <label for="amount-1">От:</label>
-                        <input type="text" id="amount-1">
-                        <label for="amount-2">До:</label>
-                        <input type="text" id="amount-2">
+                        <label for="amount-1" class="accordeon__inner-item_label-left"> </label><span>от</span>
+                        <input type="text" id="amount-1" class="accordeon__inner-item_input-slider">
+                        <label for="amount-2" class="accordeon__inner-item_label-right"> </label><span>до</span>
+                        <input type="text" id="amount-2" class="accordeon__inner-item_input-slider">
                       </p>
                       <div id="slider-range"></div>
                     </li>
@@ -215,29 +207,53 @@
           <div class="b-catalog-content">
             <div class="catalog-content__item active">
               <ul class="catalog-content__list-1">
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
                 <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"></a></li>
-                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1">          </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1"> </a></li>
+                <li class="catalog-content__elem-1"><a href="#" class="catalog-content__link-1">           </a></li>
               </ul>
             </div>
             <div class="catalog-content__item">
               <ul class="catalog-content__list-2">
-                <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2">
-                    <div class="b-slideshow">
-                      <div class="b-slideshow-main"><img src="img/phone-1.png" class="slideshow-main__img"></div>
-                      <ul class="slideshow__list clearfix">
-                        <li class="slideshow__item slideshow__item_mod">    <a href="#" class="slideshow__link"> <img src="img/phone-1-1.png" alt="#" class="slideshow__img"></a></li>
-                        <li class="slideshow__item">    <a href="#" class="slideshow__link"> <img src="img/phone-1-2.png" alt="#" class="slideshow__img"></a></li>
-                        <li class="slideshow__item">    <a href="#" class="slideshow__link"> <img src="img/phone-1-3.png" alt="#" class="slideshow__img"></a></li>
-                      </ul>
-                      <p>Артикул <span>189238                      </span></p>
-                    </div></a></li>
+                <li class="catalog-content__elem-2 clearfix">         
+                  <div class="b-slideshow slideshow_mod">
+                    <div class="b-slideshow-main"><img src="img/phone-1.png" class="slideshow-main__img"></div>
+                    <ul class="slideshow__list clearfix">
+                      <li class="slideshow__item slideshow__item_mod">    <a href="#" class="slideshow__link"> <img src="img/phone-1-1.png" alt="#" class="slideshow__img"></a></li>
+                      <li class="slideshow__item">    <a href="#" class="slideshow__link"> <img src="img/phone-1-2.png" alt="#" class="slideshow__img"></a></li>
+                      <li class="slideshow__item">    <a href="#" class="slideshow__link"> <img src="img/phone-1-3.png" alt="#" class="slideshow__img"></a></li>
+                    </ul>
+                    <p class="slideshow__text-art">Артикул <span>189238  </span></p>
+                  </div>
+                  <div class="b-desc-merch desc-merch_mod">
+                    <h5 class="desc-merch__title">Samsung GT-I9301I GALAXY S 3 </h5>
+                    <p class="desc-merch__text">
+                       
+                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+                      Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
+                      EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
+                      Частота процессора 1400 МГц 
+                    </p>
+                    <ul class="desc-merch__list clearfix">
+                      <li class="desc-merch__item"><a class="desc-merch__link"></a></li>
+                      <li class="desc-merch__item"><a class="desc-merch__link"> </a></li>
+                      <li class="desc-merch__item"><a class="desc-merch__link"> </a></li>
+                      <li class="desc-merch__item"><a class="desc-merch__link"></a></li>
+                      <li class="desc-merch__item"><a class="desc-merch__link"> </a></li>
+                    </ul>
+                    <div class="desc-merch__class desc-merch__class_mod">4                  </div>
+                  </div>
+                  <div class="b-price-basket price-basket_mod">
+                    <p class="price-basket__text price-basket__text_mod">11290 P</p>
+                    <button class="price-basket__btn price-basket__btn_mod">В корзину</button>
+                    <p class="price-basket__nality price-basket__nality_mod">В наличии                                          </p>
+                  </div>
+                </li>
                 <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
                 <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
                 <li class="catalog-content__elem-2"><a href="#" class="catalog-content__link-2"></a></li>
@@ -266,7 +282,7 @@
       </section>
       <section class="b-content-text-wrap clearfix">
         <h1 class="content-text__title">Важная информация</h1>
-        <div class="b-content-text"> 
+        <div class="b-content-text clearfix"> 
           <p class="content-text__col">
              
             Повседневная практика показывает, что начало повседневной работы 
@@ -275,9 +291,16 @@
             Разнообразный и богатый опыт новая модель организационной деятельности 
             требуют от нас анализа систем массового участия.Повседневная практика 
             показывает, что сложившаяся структура организации способствует подготовки 
-            и реализации соответствующий условий активизации. Разнообразный и богатый 
-            опыт реализация намеченных плановых заданий требуют определения и уточнения 
-            дальнейших направлений развития.
+            и реализации соответствующий условий активизации. 
+          </p>
+          <p class="content-text__col">
+            Повседневная практика показывает, что начало повседневной работы 
+            по формированию позиции представляет собой интересный эксперимент 
+            проверки позиций, занимаемых участниками в отношении поставленных задач. 
+            Разнообразный и богатый опыт новая модель организационной деятельности 
+            требуют от нас анализа систем массового участия.Повседневная практика 
+            показывает, что сложившаяся структура организации способствует подготовки 
+            и реализации соответствующий условий активизации. 
           </p>
           <p class="content-text__col">
              
@@ -287,9 +310,7 @@
             Разнообразный и богатый опыт новая модель организационной деятельности 
             требуют от нас анализа систем массового участия.Повседневная практика 
             показывает, что сложившаяся структура организации способствует подготовки 
-            и реализации соответствующий условий активизации. Разнообразный и богатый 
-            опыт реализация намеченных плановых заданий требуют определения и уточнения 
-            дальнейших направлений развития.
+            и реализации соответствующий условий активизации. 
           </p>
           <p class="content-text__col">
              
@@ -299,9 +320,7 @@
             Разнообразный и богатый опыт новая модель организационной деятельности 
             требуют от нас анализа систем массового участия.Повседневная практика 
             показывает, что сложившаяся структура организации способствует подготовки 
-            и реализации соответствующий условий активизации. Разнообразный и богатый 
-            опыт реализация намеченных плановых заданий требуют определения и уточнения 
-            дальнейших направлений развития.
+            и реализации соответствующий условий активизации.   
           </p>
           <p class="content-text__col">
              
@@ -311,9 +330,7 @@
             Разнообразный и богатый опыт новая модель организационной деятельности 
             требуют от нас анализа систем массового участия.Повседневная практика 
             показывает, что сложившаяся структура организации способствует подготовки 
-            и реализации соответствующий условий активизации. Разнообразный и богатый 
-            опыт реализация намеченных плановых заданий требуют определения и уточнения 
-            дальнейших направлений развития.  
+            и реализации соответствующий условий активизации. 
           </p>
           <p class="content-text__col">
              
@@ -323,21 +340,7 @@
             Разнообразный и богатый опыт новая модель организационной деятельности 
             требуют от нас анализа систем массового участия.Повседневная практика 
             показывает, что сложившаяся структура организации способствует подготовки 
-            и реализации соответствующий условий активизации. Разнообразный и богатый 
-            опыт реализация намеченных плановых заданий требуют определения и уточнения 
-            дальнейших направлений развития.
-          </p>
-          <p class="content-text__col">
-             
-            Повседневная практика показывает, что начало повседневной работы 
-            по формированию позиции представляет собой интересный эксперимент 
-            проверки позиций, занимаемых участниками в отношении поставленных задач. 
-            Разнообразный и богатый опыт новая модель организационной деятельности 
-            требуют от нас анализа систем массового участия.Повседневная практика 
-            показывает, что сложившаяся структура организации способствует подготовки 
-            и реализации соответствующий условий активизации. Разнообразный и богатый 
-            опыт реализация намеченных плановых заданий требуют определения и уточнения 
-            дальнейших направлений развития.  
+            и реализации соответствующий условий активизации.  
           </p>
         </div>
       </section>
@@ -346,13 +349,13 @@
   <div class="empty"> </div>
   <footer class="footer">
     <div class="container clearfix"> 
-      <div class="b-footer-left"><a href="index.html" class="b-footer__logo__link"><img src="img/logo-footer.png" alt="#" title="Логотип" class="b-footer__logo-img b-footer__logo-img_mod"><span class="b-footer__logo-text"></span></a></div>
+      <div class="b-footer-left"><a href="index.html" class="b-footer__logo__link"><img src="img/logo-footer.png" alt="#" title="Логотип" class="b-footer__logo-img b-footer__logo-img_mod"><span class="b-footer__logo-text hidden-text">COOTECH</span></a></div>
       <div class="b-footer-right clearfix">
         <div class="b-footer-socials">
-          <ul class="b-footer-socials__list hidden-text clearfix">
-            <li class="b-footer-socials__item"> <a href="https://www.facebook.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_fb">      <span class="b-footer-socials__text">facebook</span></a></li>
-            <li class="b-footer-socials__item">    <a href="https://vk.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_b"> <span class="b-footer-socials__text">vkontakte</span></a></li>
-            <li class="b-footer-socials__item">     <a href="https://twitter.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_tw"><span class="b-footer-socials__text">twitter</span></a></li>
+          <ul class="b-footer-socials__list clearfix">
+            <li class="b-footer-socials__item"> <a href="https://www.facebook.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_fb">      <span class="b-footer-socials__text hidden-text">facebook</span></a></li>
+            <li class="b-footer-socials__item">    <a href="https://vk.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_b"> <span class="b-footer-socials__text hidden-text">vkontakte</span></a></li>
+            <li class="b-footer-socials__item">     <a href="https://twitter.com/" target="_blank" class="b-footer-socials__link b-footer-socials__link_tw"><span class="b-footer-socials__text hidden-text">twitter</span></a></li>
           </ul>
         </div>
         <div class="b-footer-nav">
