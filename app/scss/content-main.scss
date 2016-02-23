@@ -1,12 +1,17 @@
 @mixin font-main {
-	font-family: 'OpenSans', sans-serif;
+	font-family: 'OpenSans-Regular', sans-serif;
 }
+
 @mixin font-bold {
-	font-family: 'OpenSans SemiBold', sans-serif;
+	font-family: 'OpenSans-Semibold', sans-serif;
+}
+
+@mixin font-Bold {
+	font-family: 'OpenSans-Bold', sans-serif;
 }
 
 @mixin font-light {
-	font-family: 'OpenSans Light', sans-serif;
+	font-family: 'OpenSans-Light', sans-serif;
 }
 
 @mixin list-off {
@@ -41,6 +46,8 @@
 .b-catalog-switch {
 	background-color: #e4ebee;
   @include border-radius-5;
+	@include font-main;
+	font-size: 14px;
 	margin-bottom: 20px;
   border: 1px solid #dee1e4;
   position: relative;
@@ -74,7 +81,7 @@
 .catalog-switch__text_mod-right {
 	position: absolute;
 	top: 17px;
-	right: 180px;
+	right: 170px;
 }
 
 .catalog-switch__item {
@@ -122,7 +129,7 @@
   @include border-radius-5;
   border: 1px solid #dee1e4;
 	background-color: #fff;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .catalog-content__item {
@@ -143,14 +150,8 @@
   background-color: #fbfbfb;
   border-top: 1px solid #dee1e4;
 
-
-
-//   &:first-child {
-//     border-top: none;
-// }
-
   &:hover {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff6600;
   }
 }
 
@@ -165,119 +166,6 @@
 
 .slideshow_mod {
 	margin: 20px 0 0 25px;
-}
-
-.b-desc-merch {
-	float: left;
-	width: 410px;
-	@include font-bold;
-	font-size: 14px;
-}
-
-.desc-merch_mod {
-	margin-left: 20px;
-}
-
-.desc-merch__title {
-
-}
-
-
-.desc-merch__list {
-	@include list-off;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.desc-merch__item {
-	float: left;
-}
-
-.desc-merch__link {
-	display: block;
-	width: 16px;
-	height: 14px;
-	background: url(../img/zv-k.png);
-
-	// &:last-child {
-	// 	background: url(../img/zv-g.png);
-	// }
-}
-
-.desc-merch__class {
-	width: 28px;
-	background-color: #b5beca;
-	color: #fff;
-	border-radius: 8px;
-	text-align: center;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.desc-merch__class_mod {
-
-}
-
-.b-price-basket {
-	float: left;
-	width: 140px;
-	@include font-bold;
-	font-size: 14px;
-	position: relative;
-}
-
-.b-price-basket:before {
-	content: "";
-	width: 1px;
-	height: 200px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #dee1e4;
-}
-
-
-.price-basket_mod {
-	margin-top: 20px;
-
-}
-
-
-
-.price-basket__text {
-
-}
-
-.price-basket__text_mod {
-	margin-left: 60px;
-}
-
-.price-basket__btn {
-	background-color: #ff6e35;
-	color: #fff;
-	border: none;
-	@include border-radius-5;
-	padding: 10px 15px;
-}
-
-.price-basket__btn_mod {
-	margin: 110px 0 0 25px;
-}
-
-.price-basket__nality_mod {
-	margin-left: 50px;
-	position: relative;
-}
-
-.price-basket__nality:before {
-	content: "";
-	width: 8px;
-	height: 8px;
-	position: absolute;
-	top: 2px;
-	left: -15px;
-	border-radius: 50%;
-	background-color: #60ac49;
 }
 
 .b-slideshow-main {
@@ -311,6 +199,10 @@
 	border: 1px solid #dee1e4;
 	@include border-radius-3;
 
+	&:first-child {
+		margin-left: 0;
+	}
+
 	&:hover {
 		border: 1px solid #ff6600;
 	}
@@ -327,11 +219,9 @@
 	margin: 3px auto;
 }
 
-.slideshow__item_mod {
-	margin-left: 0;
-}
-
 .slideshow__text-art {
+	@include font-bold;
+	font-size: 15px;
 	color: #7f7f7f;
 	text-align: center;
 }
@@ -340,15 +230,125 @@
 	color: #141416;
 }
 
+.b-desc-merch {
+	float: left;
+	width: 350px;
+	@include font-bold;
+	font-size: 12px;
+}
 
+.desc-merch_mod {
+	margin-left: 20px;
+}
 
-// .b-desc-merch {
-// 	display: inline-block;
-// }
-//
-// .b-price-basket {
-// 	display: inline-block;
-// }
+.desc-merch__title {
+	@include font-bold;
+	font-size: 16px;
+}
+
+.desc-merch__text {
+	@include font-bold;
+	font-size: 12px;
+	width: auto;
+}
+
+.desc-merch__list {
+	@include list-off;
+	float: left;
+}
+
+.desc-merch__list_mod {
+	margin-right: 15px;
+	margin-top: 2px;
+}
+
+.desc-merch__item {
+	float: left;
+	display: block;
+	width: 16px;
+	height: 14px;
+	cursor: pointer;
+	background: url(../img/zv-k.png);
+}
+
+.desc-merch__class {
+	width: 30px;
+	background-color: #b5beca;
+	color: #fff;
+	border-radius: 10px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.desc-merch__class-text {
+	font-size: 12px;
+}
+
+.b-price-basket {
+	float: left;
+	width: 140px;
+	@include font-bold;
+	font-size: 12px;
+	position: relative;
+}
+
+.b-price-basket:before {
+	content: "";
+	width: 1px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #dee1e4;
+}
+
+.price-basket_mod {
+	margin: 20px 0 0 50px;
+}
+
+.price-basket__text {
+	@include font-Bold;
+	font-size: 18px;
+	margin: 0;
+}
+
+.price-basket__text_mod {
+	margin: 10px 0 0 60px;
+}
+
+.price-basket__btn {
+	background-color: #ff6e35;
+	color: #fff;
+	border: none;
+	@include border-radius-5;
+	padding: 5px 15px;
+}
+
+.price-basket__btn_mod {
+	margin: 115px 0 0 25px;
+	@include font-bold;
+	font-size: 14px;
+}
+
+.price-basket__nality_mod {
+	margin-left: 50px;
+	position: relative;
+	@include font-bold;
+	font-size: 14px;
+	color: #7f7f7f;
+}
+
+.price-basket__nality:before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 6px;
+	left: -15px;
+	border-radius: 50%;
+	background-color: #60ac49;
+}
 
 .catalog-content__list-2 {
   @include list-off;
@@ -357,15 +357,38 @@
 .catalog-content__elem-2 {
   width: 100%;
   background-color: #fbfbfb;
-  border-top: 1px solid #dee1e4;
+	border: 1px solid #fbfbfb;
+	position: relative;
 
-  // &:first-child {
-  //   border-top: none;
-  // }
+	&:first-child {
+		-moz-border-radius: 5px 5px 0 0;
+	  -ms-border-radius: 5px 5px 0 0;
+	  -o-border-radius: 5px 5px 0 0;
+	  border-radius: 5px 5px 0 0;
+	}
+
+	&:first-last {
+		-moz-border-radius: 0 0 5px 5px;
+	  -ms-border-radius: 0 0 5px 5px;
+	  -o-border-radius: 0 0 5px 5px;
+	  border-radius: 0 0 5px 5px;
+	}
 
   &:hover {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ff6600;
+		z-index: 2;
   }
+
+	&:before {
+		content: "";
+		width: 740px;
+		height: 1px;
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		background-color: #dee1e4;
+		z-index: 1px;
+	}
 }
 
 .catalog-content__link-2 {
@@ -383,17 +406,17 @@
   border: 1px solid #dee1e4;
   @include border-radius-5;
   background-color: #fbfbfb;
-	margin-right: 20px; // margin-left: 20px;
+	margin-left: 20px;
+
+	&:hover {
+    border: 1px solid #ff6600;
+  }
 
   &:first-child {
     margin-left: 0;
+	}
 }
 
-.catalog-content__elem-3:nth-child(3n) {
+.catalog-content__elem-3:nth-child(4n+1) {
 	margin-right: 0 !important;
-}
-
-  &:hover {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-  }
 }

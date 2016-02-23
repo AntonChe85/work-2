@@ -1,12 +1,17 @@
 @mixin font-main {
-	font-family: 'OpenSans', sans-serif;
+	font-family: 'OpenSans-Regular', sans-serif;
 }
+
 @mixin font-bold {
-	font-family: 'OpenSans SemiBold', sans-serif;
+	font-family: 'OpenSans-Semibold', sans-serif;
+}
+
+@mixin font-Bold {
+	font-family: 'OpenSans-Bold', sans-serif;
 }
 
 @mixin font-light {
-	font-family: 'OpenSans Light', sans-serif;
+	font-family: 'OpenSans-Light', sans-serif;
 }
 
 @mixin list-off{
@@ -61,7 +66,7 @@ $link-color: #333;
 .b-footer-socials__item {
   display: block;
 	width: 43px;
-	height: 44px;
+	height: 43px;
 	float: left;
   margin-left: 30px;
 }
@@ -69,7 +74,7 @@ $link-color: #333;
 .b-footer-socials__link  {
   display: block;
 	width: 43px;
-	height: 44px;
+	height: 43px;
 }
 
 .b-footer-socials__link_fb {
@@ -97,29 +102,30 @@ $link-color: #333;
 }
 
 .b-footer-nav {
-  width: 520px;
+  width: 533px;
   float: right;
   clear: right;
 }
 
 .b-footer-nav__menu {
   @include list-off;
+	@include font-main;
+	font-size: 14px;
 }
 
 .b-footer-nav__menu__item:first-child {
-  margin-left: 180px;
+  margin-left: 181px;
 }
 
 .b-footer-nav__menu__item {
   float: left;
-  margin-left: 22px;
+  margin-left: 20px;
 }
 
 .b-footer-nav__menu__link {
   display: block;
   padding: 0 0 20px 0;
   color: $element-color;
-  font-size: 14px;
 
   &:hover {
     text-decoration: none;

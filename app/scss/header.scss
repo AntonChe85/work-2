@@ -1,13 +1,17 @@
 @mixin font-main {
-	font-family: 'OpenSans', sans-serif;
+	font-family: 'OpenSans-Regular', sans-serif;
 }
 
 @mixin font-bold {
-	font-family: 'OpenSans SemiBold', sans-serif;
+	font-family: 'OpenSans-Semibold', sans-serif;
+}
+
+@mixin font-Bold {
+	font-family: 'OpenSans-Bold', sans-serif;
 }
 
 @mixin font-light {
-	font-family: 'OpenSans Light', sans-serif;
+	font-family: 'OpenSans-Light', sans-serif;
 }
 
 @mixin list-off {
@@ -84,7 +88,7 @@ $link-color: #333;
 }
 
 .header-contact__adress {
-  background: url(../img/sprite-cont.png) 0 2px no-repeat;
+  background: url(../img/sprite-cont.png) 0 4px no-repeat;
 }
 
 .header-contact__adress_mod {
@@ -155,7 +159,7 @@ $link-color: #333;
   color: $element-color;
   background-color: $main-color;
   margin-left: -5px;
-  padding: 7px 15px 8px;
+  padding: 4px 15px 5px;
   -webkit-border-radius: 0 3px 3px 0;
 	-moz-border-radius: 0 3px 3px 0;
 	-ms-border-radius: 0 3px 3px 0;
@@ -170,7 +174,7 @@ $link-color: #333;
   }
 
   &:active {
-		background: lighten($main-color, 20%);
+		background: darken($main-color, 10%);
   }
 }
 
@@ -254,8 +258,8 @@ $link-color: #333;
   text-decoration: none;
   padding: 0 15px;
   line-height: 45px;
-  @include font-main;
-  font-size: 16px;
+  @include font-bold;
+  font-size: 15px;
 
   &:hover {
     background-color: #e4e2e2;
@@ -265,7 +269,7 @@ $link-color: #333;
     background-color: $main-color;
     color: $element-color;
     @include font-bold;
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 

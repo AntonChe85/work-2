@@ -1,11 +1,11 @@
 .content-text__title {
   color: #333;
-  font-family: 'OpenSans SemiBold', sans-serif;
-  font-size: 18px; }
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 20px; }
 
 .b-content-text {
+  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 13px;
-  font-family: 'OpenSans', sans-serif;
   margin-bottom: 30px;
   text-align: justify; }
 

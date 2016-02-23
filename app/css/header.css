@@ -48,7 +48,7 @@
   background: url(../img/sprite-soc-header.png) 26px -26px; }
 
 .header-contact__adress {
-  background: url(../img/sprite-cont.png) 0 2px no-repeat; }
+  background: url(../img/sprite-cont.png) 0 4px no-repeat; }
 
 .header-contact__adress_mod {
   float: right;
@@ -57,7 +57,7 @@
 .header-contact__adress-adr {
   color: #333;
   margin-left: 20px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 14px; }
 
 .header-contact__phone {
@@ -70,7 +70,7 @@
 .header-contact__phone-link {
   text-decoration: none;
   color: #333;
-  font-family: 'OpenSans SemiBold', sans-serif;
+  font-family: 'OpenSans-Semibold', sans-serif;
   font-size: 16px; }
 
 .header-contact__phone-number {
@@ -107,13 +107,13 @@
   color: #fff;
   background-color: #ff6600;
   margin-left: -5px;
-  padding: 7px 15px 8px;
+  padding: 4px 15px 5px;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   -ms-border-radius: 0 3px 3px 0;
   -o-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
-  font-family: 'OpenSans SemiBold', sans-serif;
+  font-family: 'OpenSans-Semibold', sans-serif;
   font-size: 16px;
   cursor: pointer; }
 
@@ -121,26 +121,26 @@
   background: #ff8533; }
 
 .header-search__form-btn:active {
-  background: #ffa366; }
+  background: #cc5200; }
 
 ::-webkit-input-placeholder {
   color: #7f7f7f;
-  font-family: 'OpenSans Light', sans-serif;
+  font-family: 'OpenSans-Light', sans-serif;
   font-size: 14px; }
 
 ::-moz-placeholder {
   color: #7f7f7f;
-  font-family: 'OpenSans Light', sans-serif;
+  font-family: 'OpenSans-Light', sans-serif;
   font-size: 14px; }
 
 :-moz-placeholder {
   color: #7f7f7f;
-  font-family: 'OpenSans Light', sans-serif;
+  font-family: 'OpenSans-Light', sans-serif;
   font-size: 14px; }
 
 :-ms-input-placeholder {
   color: #7f7f7f;
-  font-family: 'OpenSans Light', sans-serif;
+  font-family: 'OpenSans-Light', sans-serif;
   font-size: 14px; }
 
 .header-search__nav {
@@ -161,7 +161,7 @@
 
 .header-search__nav-link {
   color: #333;
-  font-family: 'OpenSans SemiBold', sans-serif;
+  font-family: 'OpenSans-Semibold', sans-serif;
   font-size: 16px; }
 
 .header-search__nav-link:hover {
@@ -192,8 +192,8 @@
   text-decoration: none;
   padding: 0 15px;
   line-height: 45px;
-  font-family: 'OpenSans', sans-serif;
-  font-size: 16px; }
+  font-family: 'OpenSans-Semibold', sans-serif;
+  font-size: 15px; }
 
 .header-nav__menu-link:hover {
   background-color: #e4e2e2; }
@@ -201,8 +201,8 @@
 .header-nav__menu-link:active {
   background-color: #ff6600;
   color: #fff;
-  font-family: 'OpenSans SemiBold', sans-serif;
-  font-size: 16px; }
+  font-family: 'OpenSans-Semibold', sans-serif;
+  font-size: 15px; }
 
 .header-nav__menu-text {
   line-height: 45px; }

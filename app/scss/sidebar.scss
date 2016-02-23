@@ -1,12 +1,17 @@
 @mixin font-main {
-	font-family: 'OpenSans', sans-serif;
+	font-family: 'OpenSans-Regular', sans-serif;
 }
+
 @mixin font-bold {
-	font-family: 'OpenSans SemiBold', sans-serif;
+	font-family: 'OpenSans-Semibold', sans-serif;
+}
+
+@mixin font-Bold {
+	font-family: 'OpenSans-Bold', sans-serif;
 }
 
 @mixin font-light {
-	font-family: 'OpenSans Light', sans-serif;
+	font-family: 'OpenSans-Light', sans-serif;
 }
 
 @mixin list-off {
@@ -83,8 +88,22 @@ $box12-color: #7f401d;
 	}
 }
 
+.breadcrumbs__link_mod-cat {
+	text-decoration: underline;
+	color: $main-color;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:active {
+		text-decoration: underline;
+		color: $main-color;
+	}
+}
+
 .b-breadcrumbs-wrap__title {
-	@include font-bold;
+	@include font-Bold;
 	font-size: 20px;
 	margin-bottom: 30px;
 }
@@ -104,7 +123,7 @@ $box12-color: #7f401d;
 
 .range__item {
 	@include font-main;
-	font-size: 14px;
+	font-size: 15px;
 	padding: 15px 0 15px 30px;
 
 	&:first-child {
@@ -157,9 +176,10 @@ $box12-color: #7f401d;
 }
 
 .accordeon__text {
+	color: #333;
   margin-left: 30px;
   @include font-bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .accordeon__inner {

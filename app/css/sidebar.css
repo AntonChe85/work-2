@@ -10,7 +10,7 @@
 .breadcrumbs__item {
   float: left;
   margin-left: 5px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 14px; }
 
 .breadcrumbs__item:first-child {
@@ -31,8 +31,19 @@
   text-decoration: underline;
   color: #ff6600; }
 
+.breadcrumbs__link_mod-cat {
+  text-decoration: underline;
+  color: #ff6600; }
+
+.breadcrumbs__link_mod-cat:hover {
+  text-decoration: none; }
+
+.breadcrumbs__link_mod-cat:active {
+  text-decoration: underline;
+  color: #ff6600; }
+
 .b-breadcrumbs-wrap__title {
-  font-family: 'OpenSans SemiBold', sans-serif;
+  font-family: 'OpenSans-Bold', sans-serif;
   font-size: 20px;
   margin-bottom: 30px; }
 
@@ -53,8 +64,8 @@
   list-style: none; }
 
 .range__item {
-  font-family: 'OpenSans', sans-serif;
-  font-size: 14px;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 15px;
   padding: 15px 0 15px 30px; }
 
 .range__item:first-child {
@@ -98,9 +109,10 @@
   background-color: #d9e5ea; }
 
 .accordeon__text {
+  color: #333;
   margin-left: 30px;
-  font-family: 'OpenSans SemiBold', sans-serif;
-  font-size: 16px; }
+  font-family: 'OpenSans-Semibold', sans-serif;
+  font-size: 18px; }
 
 .accordeon__inner {
   display: none;
@@ -225,7 +237,7 @@
 
 .form__text {
   display: block;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 14px; }
 
 .form-btn-wrap {
@@ -237,7 +249,7 @@
 .form-button {
   color: #90c7fc;
   margin: 0  0 20px 30px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 14px; }
 
 .form-button:hover {
