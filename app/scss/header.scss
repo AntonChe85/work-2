@@ -250,6 +250,11 @@ $link-color: #333;
 .header-nav__menu-item {
   float: left;
   line-height: 45px;
+
+	&:nth-child(2) a {
+		background-color: $main-color;
+		color: $element-color;
+	}
 }
 
 .header-nav__menu-link {

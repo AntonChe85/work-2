@@ -130,6 +130,10 @@ $box12-color: #7f401d;
 		border-bottom: 1px solid #dee1e4;
 	}
 
+	&:last-child {
+		background-color: #d9e5ea;
+	}
+
 	&:hover {
 		background: lighten(#d9e5ea, 80%);
 	}

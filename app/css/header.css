@@ -186,6 +186,10 @@
   float: left;
   line-height: 45px; }
 
+.header-nav__menu-item:nth-child(2) a {
+  background-color: #ff6600;
+  color: #fff; }
+
 .header-nav__menu-link {
   display: block;
   color: #333;

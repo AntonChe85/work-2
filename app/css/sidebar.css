@@ -71,6 +71,9 @@
 .range__item:first-child {
   border-bottom: 1px solid #dee1e4; }
 
+.range__item:last-child {
+  background-color: #d9e5ea; }
+
 .range__item:hover {
   background: white; }
 
