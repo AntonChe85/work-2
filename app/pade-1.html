@@ -82,44 +82,42 @@
           <div class="b-accordeon-wrap">                  
             <div class="b-accordeon">
               <ul class="accordeon__list">
-                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Наличае в магазинах</span></a>
-                  <ul class="accordeon__inner">
-                    <li class="accordeon__inner-item">
-                      <form action="#" method="post">
-                        <label>
-                          <input type="radio" class="form__input">
-                          <p class="form__text">Во всех магазинах</p>
-                        </label>
-                        <label>
-                          <input type="radio" class="form__input">
-                          <p class="form__text">В ближайшем ко мне магазине    </p>
-                        </label>
-                      </form>
-                    </li>
-                  </ul>
-                </li>
-                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Бренды</span></a>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Наличае в магазинах</span><span class="accordeon__arrow"></span></a>
                   <ul class="accordeon__inner">
                     <li class="accordeon__inner-item">
                       <div class="form-wrap">
-                        <form action="#" method="post">
-                          <label for="form__input">Lenovo                   </label>
-                          <input type="checkbox" id="form__input" class="form__input">
-                          <label for="form__input">Apple                   </label>
-                          <input type="checkbox" id="form__input" class="form__input">
-                          <label for="form__input">Samsung                   </label>
-                          <input type="checkbox" id="form__input" class="form__input">
-                          <label for="form__input">Asus                   </label>
-                          <input type="checkbox" id="form__input" class="form__input">
-                          <label for="form__input">Motorola                   </label>
-                          <input type="checkbox" id="form__input" class="form__input">
-                          <div class="form-btn-wrap">   </div><a href="#" class="form-button"> Сбросить фильтр  </a>
+                        <form action="#" method="#">
+                          <input type="radio" name="name" id="fr-1" class="form__radio">
+                          <label for="fr-1" class="form__ladel">Во всех магазинах</label>
+                          <input type="radio" name="name" id="fr-2" class="form__radio">
+                          <label for="fr-2" class="form__ladel">В ближайшем ко мне магазине   </label>
                         </form>
                       </div>
                     </li>
                   </ul>
                 </li>
-                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цена</span></a>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Бренды</span><span class="accordeon__arrow"></span></a>
+                  <ul class="accordeon__inner">
+                    <li class="accordeon__inner-item">
+                      <div class="form-wrap">
+                        <form action="#" method="#">                                    
+                          <input type="checkbox" name="name" id="fc-1" class="form__checkbox">
+                          <label for="fc-1" class="form__label">Lenovo</label>
+                          <input type="checkbox" name="name" id="fc-2" class="form__checkbox">
+                          <label for="fc-2" class="form__label">Apple</label>
+                          <input type="checkbox" name="name" id="fc-3" class="form__checkbox">
+                          <label for="fc-3" class="form__label">Samsung</label>
+                          <input type="checkbox" name="name" id="fc-4" class="form__checkbox">
+                          <label for="fc-4" class="form__label">Asus</label>
+                          <input type="checkbox" name="name" id="fc-5" class="form__checkbox">
+                          <label for="fc-5" class="form__label">Motorola </label>
+                          <div class="form-btn-wrap form-btn-wrap_mod">   <a href="#" class="reset__btn-filter"> Сбросить фильтр  </a></div>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цена</span><span class="accordeon__arrow"></span></a>
                   <ul class="accordeon__inner">
                     <li class="accordeon__inner-item">
                       <p>
@@ -132,7 +130,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цвет</span></a>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Цвет</span><span class="accordeon__arrow"></span></a>
                   <ul class="accordeon__inner">
                     <li class="accordeon__inner-item">
                       <div class="box__list box__list_mod clearfix">
@@ -152,32 +150,24 @@
                     </li>
                   </ul>
                 </li>
-                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Операционные системы</span></a>
+                <li class="accordeon__item"> <a href="#" class="accordeon__trigger"> <span class="accordeon__text">Операционные системы</span><span class="accordeon__arrow"></span></a>
                   <ul class="accordeon__inner">
                     <li class="accordeon__inner-item">
-                      <form action="#" class="form">
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Android</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">iOS</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Windows Mobile</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Symbian</p>
-                        </label>
-                        <label>
-                          <input type="checkbox" class="form__input">
-                          <p class="form__text">Custom</p>
-                        </label>
-                        <div class="form-btn-wrap">   <a href="#" class="form-button">Сбросить фильтр                </a></div>
-                      </form>
+                      <div class="form-wrap">
+                        <form action="#" method="#">                                    
+                          <input type="checkbox" name="name" id="fco-1" class="form__checkbox">
+                          <label for="fco-1" class="form__label">Android</label>
+                          <input type="checkbox" name="name" id="fco-2" class="form__checkbox">
+                          <label for="fco-2" class="form__label">iOS</label>
+                          <input type="checkbox" name="name" id="fco-3" class="form__checkbox">
+                          <label for="fco-3" class="form__label">Windows</label>
+                          <input type="checkbox" name="name" id="fco-4" class="form__checkbox">
+                          <label for="fco-4" class="form__label">Symbian</label>
+                          <input type="checkbox" name="name" id="fco-5" class="form__checkbox">
+                          <label for="fco-5" class="form__label">Custom </label>
+                          <div class="form-btn-wrap form-btn-wrap_mod">   <a href="#" class="reset__btn-filter"> Сбросить фильтр                </a></div>
+                        </form>
+                      </div>
                     </li>
                   </ul>
                 </li>
@@ -192,8 +182,7 @@
                 <label class="catalog-switch__label catalog-switch__label_mod"> <span class="catalog-switch__text">Сортировать по</span>
                   <select name="" class="catalog-switch__select catalog-switch__select_mod"> 
                     <option>по цене </option>
-                    <option>по цене</option>
-                    <option>по цене</option>
+                    <option>по популярности</option>
                   </select>
                 </label>
               </form>
@@ -214,10 +203,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -233,10 +219,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -252,10 +235,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -271,10 +251,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -290,10 +267,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -309,10 +283,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -328,10 +299,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -347,10 +315,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -366,10 +331,7 @@
                   </p>
                   <p class="catalog-content__text-prop catalog-content__text-prop-mod">
                      
-                    Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
-                    Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, 
-                    EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, 
-                    Частота процессора 1400 МГц...
+                    Смартфон Samsung GT-I9301I GALAXY S...
                   </p>
                   <h5 class="catalog-content__price catalog-content__price-mod">11290  
                     <del>P  </del>
@@ -1082,6 +1044,15 @@
               </ul>
             </div>
           </div>
+          <div class="b-switch-pages switch-pages_mod">
+            <ul class="switch-pages__list clearfix">
+              <li class="switch-pages__item"><a href="#" class="switch-pages__link"> </a></li>
+              <li class="switch-pages__item"><a href="#" class="switch-pages__link"><span class="switch-pages__text">1</span></a></li>
+              <li class="switch-pages__item"><a href="#" class="switch-pages__link"><span class="switch-pages__text">2</span></a></li>
+              <li class="switch-pages__item"><a href="#" class="switch-pages__link"> <span class="switch-pages__text">3</span></a></li>
+              <li class="switch-pages__item"><a href="#" class="switch-pages__link">      </a></li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="b-content-text-wrap clearfix">
@@ -1183,12 +1154,5 @@
   <script src="lib/jquery-ui/jquery-ui.js"></script>
   <script src="lib/select2/dist/js/select2.js"></script>
   <script src="lib/columnizer/src/jquery.columnizer.js"></script>
-  <script src="js/accordeon.js"></script>
-  <script src="js/content.js"></script>
-  <script src="js/slideshow.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/select2.js"></script>
-  <script src="js/colomnizer.js"></script>
-  <script src="js/last.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -50,10 +50,6 @@ $box12-color: #7f401d;
 	float: left;
 }
 
-.b-breadcrumbs-wrap {
-
-}
-
 .breadcrumbs__list {
 	@include list-off;
 }
@@ -159,7 +155,7 @@ $box12-color: #7f401d;
 .b-accordeon {
   max-width: 100%;
   background-color: #fbfbfb;
-	margin: -17px 0; // hak
+	margin: -17px 0;
 }
 
 .accordeon__trigger {
@@ -169,21 +165,32 @@ $box12-color: #7f401d;
 	line-height: 50px;
   margin-left: 0;
   padding: 0;
-
-	&:hover {
-		background: lighten(#d9e5ea, 80%);
-	}
-
-	&:active {
-		background-color: #d9e5ea;
-	}
+	position: relative;
 }
 
 .accordeon__text {
 	color: #333;
   margin-left: 30px;
   @include font-bold;
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.accordeon__arrow {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	background: url(../img/sprite-arrow.png) 0 0 no-repeat;
+	width: 18px;
+	height: 11px;
+	display: block;
+
+	&:hover {
+		background: url(../img/sprite-arrow.png) 0 0 no-repeat;
+	}
+
+	&:active {
+		background: url(../img/sprite-arrow.png) 0 -11px no-repeat;
+	}
 }
 
 .accordeon__inner {
@@ -202,28 +209,68 @@ margin-left: -40px;
   list-style-type: none;
 }
 
-// чекбоксы
+// радио инпуты - чекбоксы
 
 .form-wrap {
-	margin-left: 30px;
+	margin: 0 0 20px 30px;
 }
 
-.form__input {
+.form__radio {
 	display: none;
 }
 
-.form__input:checked + label {
+.form__radio:checked + label {
+	background: url(../img/radio-active.png) no-repeat scroll;
+}
+
+.form__radio + label {
+	background: url(../img/radio.png) no-repeat scroll;
+	cursor: pointer;
+	padding-left: 30px;
+	padding-bottom: 1px;
+	display: block;
+	margin-top: 15px;
+}
+
+.form__label {
+	@include font-main;
+	font-size: 16px;
+}
+
+.form__checkbox {
+	display: none;
+}
+
+.form__checkbox:checked + label {
 	background: url(../img/checkbox-active.png) no-repeat scroll;
 }
 
-
-.form__input + label {
+.form__checkbox + label {
 	background: url(../img/checkbox.png) no-repeat scroll;
 	cursor: pointer;
 	padding-left: 30px;
 	padding-bottom: 1px;
 	display: block;
 	margin-top: 15px;
+}
+
+.form-btn-wrap_mod {
+	margin: 15px 0 20px -30px;
+}
+
+.reset__btn-filter {
+	color: #90c7fc;
+  margin: 0  0 20px 30px;
+  @include font-main;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $main-color;
+  }
 }
 
 // ползунок
@@ -340,40 +387,4 @@ margin-left: -40px;
 	&:nth-child(12) {
 		background-color: $box12-color;
 	}
-}
-
-
-
-// .form__input {
-//   margin: 2px 10px 0 30px ;
-//   float: left;
-// }
-
-.form__text {
-  display: block;
-  @include font-main;
-  font-size: 14px;
-}
-
-.form-btn-wrap {
-	margin-bottom: 20px;
-}
-
-.form-button_mod {
-	margin-bottom: 20px;
-}
-
-.form-button {
-  color: #90c7fc;
-  margin: 0  0 20px 30px;
-  @include font-main;
-  font-size: 14px;
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  &:active {
-    color: $main-color;
-  }
 }

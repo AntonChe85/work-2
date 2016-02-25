@@ -20,37 +20,39 @@ aside.b-sidebar
           li.accordeon__item 
             a(href="#").accordeon__trigger  
               span.accordeon__text Наличае в магазинах
-            ul.accordeon__inner
-              li.accordeon__inner-item
-                form(action="#" method="post")
-                  label
-                    input(type="radio" class="form__input") 
-                    p.form__text Во всех магазинах
-                  label
-                    input(type="radio" class="form__input") 
-                    p.form__text В ближайшем ко мне магазине    
-          li.accordeon__item 
-            a(href="#").accordeon__trigger  
-              span.accordeon__text Бренды
+              span.accordeon__arrow
             ul.accordeon__inner
               li.accordeon__inner-item
                 .form-wrap
-                  form(action="#" method="post")
-                    label(for="form__input") Lenovo                   
-                    input(type="checkbox")#form__input.form__input
-                    label(for="form__input") Apple                   
-                    input(type="checkbox")#form__input.form__input
-                    label(for="form__input") Samsung                   
-                    input(type="checkbox")#form__input.form__input
-                    label(for="form__input") Asus                   
-                    input(type="checkbox")#form__input.form__input
-                    label(for="form__input") Motorola                   
-                    input(type="checkbox")#form__input.form__input   
-                    .form-btn-wrap    
-                    a(href="#").form-button  Сбросить фильтр  
+                  form(action="#" method="#")
+                    input(type="radio" name="name" id="fr-1" class="form__radio") 
+                    label(for="fr-1").form__ladel Во всех магазинах
+                    input(type="radio" name="name" id="fr-2" class="form__radio") 
+                    label(for="fr-2").form__ladel В ближайшем ко мне магазине   
+          li.accordeon__item 
+            a(href="#").accordeon__trigger  
+              span.accordeon__text Бренды
+              span.accordeon__arrow
+            ul.accordeon__inner
+              li.accordeon__inner-item
+                .form-wrap
+                  form(action="#" method="#")                                     
+                    input(type="checkbox" name="name" id="fc-1" class="form__checkbox")
+                    label(for="fc-1").form__label Lenovo
+                    input(type="checkbox" name="name" id="fc-2" class="form__checkbox")
+                    label(for="fc-2").form__label Apple
+                    input(type="checkbox" name="name" id="fc-3" class="form__checkbox") 
+                    label(for="fc-3").form__label Samsung
+                    input(type="checkbox" name="name" id="fc-4" class="form__checkbox") 
+                    label(for="fc-4").form__label Asus
+                    input(type="checkbox" name="name" id="fc-5" class="form__checkbox") 
+                    label(for="fc-5").form__label Motorola 
+                    .form-btn-wrap.form-btn-wrap_mod    
+                      a(href="#").reset__btn-filter  Сбросить фильтр  
           li.accordeon__item 
             a(href="#").accordeon__trigger  
               span.accordeon__text Цена
+              span.accordeon__arrow
             ul.accordeon__inner
               li.accordeon__inner-item
                 p
@@ -64,6 +66,7 @@ aside.b-sidebar
           li.accordeon__item 
             a(href="#").accordeon__trigger  
               span.accordeon__text Цвет
+              span.accordeon__arrow
             ul.accordeon__inner
               li.accordeon__inner-item
                 .box__list.box__list_mod.clearfix
@@ -72,12 +75,20 @@ aside.b-sidebar
           li.accordeon__item 
             a(href="#").accordeon__trigger  
               span.accordeon__text Операционные системы
+              span.accordeon__arrow
             ul.accordeon__inner
               li.accordeon__inner-item
-                form.form(action="#")
-                  each OS in ['Android', 'iOS', 'Windows Mobile', 'Symbian', 'Custom']
-                    label
-                      input(type="checkbox" class="form__input") 
-                      p.form__text= OS 
-                  .form-btn-wrap    
-                    a(href="#").form-button Сбросить фильтр                
+                .form-wrap
+                  form(action="#" method="#")                                     
+                    input(type="checkbox" name="name" id="fco-1" class="form__checkbox")
+                    label(for="fco-1").form__label Android
+                    input(type="checkbox" name="name" id="fco-2" class="form__checkbox")
+                    label(for="fco-2").form__label iOS
+                    input(type="checkbox" name="name" id="fco-3" class="form__checkbox") 
+                    label(for="fco-3").form__label Windows
+                    input(type="checkbox" name="name" id="fco-4" class="form__checkbox") 
+                    label(for="fco-4").form__label Symbian
+                    input(type="checkbox" name="name" id="fco-5" class="form__checkbox") 
+                    label(for="fco-5").form__label Custom 
+                    .form-btn-wrap.form-btn-wrap_mod    
+                      a(href="#").reset__btn-filter  Сбросить фильтр                

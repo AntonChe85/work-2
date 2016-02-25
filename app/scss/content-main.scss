@@ -55,6 +55,22 @@
 
 .b-form-wrap {
   float: left;
+	position: relative;
+}
+
+.select2-selection__arrow {
+	background: url(../img/select-arrow.png) no-repeat;
+	position: absolute;
+	top: 10px !important;
+	right: 0;
+}
+
+.select2-selection__arrow b {
+	display: none;
+}
+
+.select2-selection__rendered {
+	color: #dee1e4 !important;
 }
 
 .catalog-switch__label {
@@ -72,7 +88,6 @@
   border: transparent;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 
 .catalog-switch__text {
   color: #5d656c;
@@ -195,15 +210,7 @@
 	@include font-main;
 	font-size: 14px;
 	width: 290px;
-	white-space: nowrap;
-	overflow: hidden;
-	padding: 5px;
-	text-overflow: ellipsis;
 	margin: 0;
-
-	&:hover {
-		white-space: normal;
-	}
 }
 
 .catalog-content__price {
@@ -359,6 +366,10 @@
 	height: 14px;
 	cursor: pointer;
 	background: url(../img/zv-k.png);
+
+	&:last-child {
+		background: url(../img/zv-g.png);
+	}
 }
 
 .desc-merch__class {
@@ -522,4 +533,53 @@
 
 .price-basket__btn-mod-elem-3 {
 	margin-left: 15px;
+}
+
+.b-switch-pages {
+	float: right;
+}
+
+.switch-pages_mod {
+	margin-top: 70px;
+}
+
+.switch-pages__list {
+	@include list-off;
+}
+
+.switch-pages__item {
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin-left: 20px;
+	border: 1px solid #e6e6e6;
+	@include border-radius-3;
+	background-color: #fbfbfb;
+	text-align: center;
+	padding-top: 3px;
+
+	&:first-child {
+		background: url(../img/sprite-switch-pages.png) 0 0 no-repeat;
+		width: 7px;
+		height: 10px;
+		margin-top: 7px;;
+	}
+
+	&:last-child {
+		background: url(../img/sprite-switch-pages.png) -6px 0 no-repeat;
+		width: 7px;
+		height: 10px;
+		margin-top: 7px;
+	}
+
+	&:nth-child(2) {
+		background-color: #e0e0e0;
+	}
+}
+
+.switch-pages__link {
+	text-decoration: none;
+	color: #7f7f7f;
+	@include font-Bold;
+	font-size: 12px;
 }
